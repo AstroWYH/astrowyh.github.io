@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的个人网页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品展示页面</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>欢迎来到我的个人网页！</h1>
-    <p>这是我的第一个 GitHub Pages 网页。</p>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">商品展示</h1>
+        <div id="product-list" class="row">
+            <!-- 商品将动态添加到这里 -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS 和依赖 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // 商品数据示例
+        const products = [
+            {
+                title: "商品1",
+                image: "https://via.placeholder.com/150",
+                link1: "https://item.taobao.com/item1",
+                link2: "https://item.taobao.com/item2"
+            },
+            {
+                title: "商品2",
+                image: "https://via.placeholder.com/150",
+                link1: "https://item.taobao.com/item3",
+                link2: "https://item.taobao.com/item4"
+            }
+        ];
+
+        // 动态生成商品卡片
+        function renderProducts() {
+            const productList = document.getElementById('product-list');
+            products.forEach(product => {
+                const productCard = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="${product.image}" class="card-img-top" alt="${product.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.title}</h5>
+                                <a href="${product.link1}" class="btn btn-primary btn-block" target="_blank">购买链接1</a>
+                                <a href="${product.link2}" class="btn btn-secondary btn-block mt-2" target="_blank">购买链接2</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productList.innerHTML += productCard;
+            });
+        }
+
+        // 调用函数渲染商品
+        renderProducts();
+    </script>
 </body>
 </html>
