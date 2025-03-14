@@ -31,8 +31,27 @@
             flex-direction: column;
         }
 
+        /* 设置文字介绍区域样式 */
         .card-body {
-            flex: 1; /* 让卡片内容区域填充剩余空间 */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 150px; /* 固定最小高度，确保所有卡片一致 */
+        }
+
+        /* 设置标题样式 */
+        .card-title {
+            flex: 1; /* 让标题区域填充剩余空间 */
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* 限制最多显示2行 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis; /* 超出部分显示省略号 */
+        }
+
+        /* 设置按钮区域样式 */
+        .card-buttons {
+            margin-top: auto; /* 将按钮区域固定在底部 */
         }
     </style>
 </head>
@@ -94,7 +113,6 @@
                 link1: "https://weidian.com/fastorder.html?itemID=5363086521&spider_token=fd2e",
                 link2: "https://item.taobao.com/item.htm?id=896595591066"
             },
-
         ];
 
         // 动态生成商品卡片
@@ -109,8 +127,10 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">${product.title}</h5>
-                                <a href="${product.link1}" class="btn btn-primary btn-block" target="_blank">仓库链接</a>
-                                <a href="${product.link2}" class="btn btn-secondary btn-block mt-2" target="_blank">备用链接</a>
+                                <div class="card-buttons">
+                                    <a href="${product.link1}" class="btn btn-primary btn-block" target="_blank">仓库链接</a>
+                                    <a href="${product.link2}" class="btn btn-secondary btn-block mt-2" target="_blank">备用链接</a>
+                                </div>
                             </div>
                         </div>
                     </div>
