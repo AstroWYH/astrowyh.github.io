@@ -159,7 +159,7 @@
             const productList = document.getElementById('product-list');
             products.forEach((product, index) => {
                 const imageUrl = `https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve${index}.jpg`;
-                const noteUrl = `${window.location.pathname.replace('index.html', '')}${index}note.html`;
+                const noteUrl = `${window.location.pathname.replace('index.html', '')}${index}note.html?title=${encodeURIComponent(product.title)}&image=${encodeURIComponent(imageUrl)}`;
                 const productCard = `
                     <div class="col-md-4 mb-4">
                         <div class="card">
@@ -171,7 +171,7 @@
                                 <div class="card-buttons">
                                     <a href="${product.link1}" class="btn btn-primary" target="_blank">仓库链接</a>
                                     <a href="${product.link2}" class="btn btn-secondary" target="_blank">备用链接</a>
-                                    <a href="${noteUrl}" class="btn btn-info" target="_blank">待开发中</a>
+                                    <a href="${noteUrl}" class="btn btn-info" target="_blank">使用说明</a>
                                 </div>
                             </div>
                         </div>
