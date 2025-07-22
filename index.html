@@ -247,20 +247,20 @@
 
         // 动态生成商品卡片
         function renderProducts() {
-            const serviceList = document.getElementById('service-list');
             const productList = document.getElementById('product-list');
-            
-            // 渲染服务商品
-            services.forEach((service, index) => {
-                const serviceCard = createCard(service.title, service.image, service.links);
-                serviceList.innerHTML += serviceCard;
-            });
+            const serviceList = document.getElementById('service-list');
             
             // 渲染游戏开发商品
             products.forEach((product, index) => {
                 const imageUrl = `https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve${index}.jpg`;
                 const productCard = createCard(product.title, imageUrl, product.links);
                 productList.innerHTML += productCard;
+            });
+
+            // 渲染服务商品
+            services.forEach((service, index) => {
+                const serviceCard = createCard(service.title, service.image, service.links);
+                serviceList.innerHTML += serviceCard;
             });
         }
         
