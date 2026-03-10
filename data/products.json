@@ -76,7 +76,7 @@
       "image": "Imgs/eve10.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=961624475342",
       "note": "<p>仓库地址：<a href=\"https://gitee.com/hanbabang/eve-gas-csharp\" target=\"_blank\">https://gitee.com/hanbabang/eve-gas-csharp</a></p><p>注：可直接vs2022打开sln运行。如果因为版本原因无法打开，则用户自己用vs2022创建C#控制台程序，将全部.cs文件拷贝后运行即可。</p>"
-    }
+    },
     {
       "id": "dialog-system",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 500行代码拿来即用",
