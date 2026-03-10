@@ -77,6 +77,13 @@
       "buyLink": "https://h5.m.goofish.com/item?id=961624475342",
       "note": "<p>仓库地址：<a href=\"https://gitee.com/hanbabang/eve-gas-csharp\" target=\"_blank\">https://gitee.com/hanbabang/eve-gas-csharp</a></p><p>注：可直接vs2022打开sln运行。如果因为版本原因无法打开，则用户自己用vs2022创建C#控制台程序，将全部.cs文件拷贝后运行即可。</p>"
     }
+    {
+      "id": "dialog-system",
+      "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 500行代码拿来即用",
+      "image": "Imgs/dialog-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择 Demo_DialogSystem.unitypackage</p><p>2. 导入后打开 Demo_DialogSystem/Scenes/DemoScene_Dialog 场景</p><p>3. 点击 Play 运行，点击屏幕推进对话，出现选项时点击选择分支</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p><p><b>添加角色：</b>准备 128×128 头像 PNG 放到 Resources/UI/，在 JSON 中引用文件名即可。</p>"
+    }
   ],
   "services": [
     {
