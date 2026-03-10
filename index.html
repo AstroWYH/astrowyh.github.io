@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>晚上做游戏的仓库</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* 设置背景渐变 */
         body {
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             font-family: 'Arial', sans-serif;
         }
-
-        /* 设置标题样式 */
         h1 {
             text-align: center;
             color: #343a40;
@@ -21,8 +17,6 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        /* 栏目标题样式 */
         .section-title {
             margin: 30px 0 20px;
             padding-bottom: 10px;
@@ -30,8 +24,6 @@
             color: #495057;
             font-weight: bold;
         }
-
-        /* 设置卡片样式 */
         .card {
             height: 100%;
             display: flex;
@@ -41,22 +33,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-
-        /* 设置图片容器的宽高比例 */
         .card-img-container {
             position: relative;
-            padding-top: 56.25%; /* 16:9 宽高比例 */
+            padding-top: 56.25%;
             overflow: hidden;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
-
-        /* 设置图片的样式 */
         .card-img-container img {
             position: absolute;
             top: 0;
@@ -65,16 +52,12 @@
             height: 100%;
             object-fit: cover;
         }
-
-        /* 设置文字介绍区域样式 */
         .card-body {
             flex: 1;
             display: flex;
             flex-direction: column;
             padding: 1.5rem;
         }
-
-        /* 设置标题样式 */
         .card-title {
             margin-bottom: 0.5rem;
             font-size: 1.25rem;
@@ -86,8 +69,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
-        /* 设置按钮区域样式 - 修改部分 */
         .card-buttons {
             margin-top: auto;
             display: flex;
@@ -95,19 +76,15 @@
             gap: 10px;
             flex-wrap: nowrap;
         }
-
         .card-buttons .btn {
             flex: 1;
             min-width: 0;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
-
         .card-buttons .btn:hover {
             transform: scale(1.05);
         }
-
-        /* 设置版权信息样式 */
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -120,150 +97,23 @@
 <body>
     <div class="container mt-5">
         <h1>晚上做游戏的仓库</h1>
-        
-        <!-- 第二个栏目：游戏开发仓库 -->
-        <h2 class="section-title">游戏开发仓库</h2>
-        <div id="product-list" class="row">
-            <!-- 商品将动态添加到这里 -->
-        </div>
 
-        <!-- 第一个栏目：答疑服务 -->
+        <h2 class="section-title">游戏开发仓库</h2>
+        <div id="product-list" class="row"></div>
+
         <h2 class="section-title">答疑服务</h2>
-        <div id="service-list" class="row">
-            <!-- 服务商品将动态添加到这里 -->
-        </div>
-        
-        <!-- 版权信息 -->
+        <div id="service-list" class="row"></div>
+
         <div class="footer">
-            © 2025 Night Gamer, Inc. All Rights Reserved.
+            © 2026 Night Gamer, Inc. All Rights Reserved.
         </div>
     </div>
 
-    <!-- Bootstrap JS 和依赖 -->
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script>
-        // 服务商品数据 - 答疑栏目
-        const services = [
-            {
-                title: "【远程协助】解决不会打开运行店铺的 UE5 Cpp 工程的环境问题",
-                image: "https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/service1.jpg",
-                links: [
-                    {text: "使用说明", url: "https://h5.m.goofish.com/item?id=903269689030", class: "btn-primary"},
-                ]
-            },
-            // {
-            //     title: "【语音】30分钟 就业指导 帮看简历 仓库答疑 聊天讨论",
-            //     image: "https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/service1.jpg",
-            //     links: [
-            //         {text: "使用说明", url: "https://h5.m.goofish.com/item?id=902808078135", class: "btn-primary"},
-            //     ]
-            // },
-        ];
-
-        // 商品数据 - 游戏开发仓库栏目（保留原有所有商品）
-        const products = [
-            {
-                title: "【UE5 Cpp】Mass框架工程 性能优化 多版本运行 UE5.2运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=900327380766", class: "btn-primary"},
-                    {text: "使用说明", url: "0note.html?title=【UE5 Cpp】Mass框架工程 性能优化 多版本运行 UE5.2运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve0.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】背包系统 MVC经典框架 UE5.2运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=900305968938", class: "btn-primary"},
-                    {text: "使用说明", url: "1note.html?title=【UE5 Cpp】背包系统 MVC经典框架 UE5.2运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve1.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】官方动作RPG升级版 GAS最佳实践 UE5.4运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=899199191347", class: "btn-primary"},
-                    {text: "使用说明", url: "2note.html?title=【UE5 Cpp】官方动作RPG升级版 GAS最佳实践 UE5.4运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve2.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】蓝图/Cpp 完全对照入门Demo 游戏公司首周作业 UE5.0运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=899199243624", class: "btn-primary"},
-                    {text: "使用说明", url: "3note.html?title=【UE5 Cpp】蓝图/Cpp 完全对照入门Demo 游戏公司首周作业 UE5.0运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve3.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】渲染Shader Render管线 一个工程搞定 UE5.2运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=899197735799", class: "btn-primary"},
-                    {text: "使用说明", url: "4note.html?title=【UE5 Cpp】渲染Shader Render管线 一个工程搞定 UE5.2运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve4.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】UE反射到Lua 最小系统实现 UE5.2运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=900327220115", class: "btn-primary"},
-                    {text: "使用说明", url: "5note.html?title=【UE5 Cpp】UE反射到Lua 最小系统实现 UE5.2运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve5.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】服务器客户端 网络复制 一个工程搞懂 UE5.2运行",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=899927621784", class: "btn-primary"},
-                    {text: "使用说明", url: "6note.html?title=【UE5 Cpp】服务器客户端 网络复制 一个工程搞懂 UE5.2运行&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve6.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【OpenCV Cpp】OpenCV仓库示例源码 一键运行上百示例",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=899474878887", class: "btn-primary"},
-                    {text: "使用说明", url: "7note.html?title=【OpenCV Cpp】OpenCV仓库示例源码 一键运行上百示例&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve7.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】多地图智能导航 BFS寻路算法 图论入门",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=951690339907", class: "btn-primary"},
-                    {text: "使用说明", url: "8note.html?title=【UE5 Cpp】多地图智能导航 BFS寻路算法 图论入门&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve8.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 Cpp】地图实现 玩家图标 可缩放 可拖拽",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=954762363040", class: "btn-primary"},
-                    {text: "使用说明", url: "9note.html?title=【UE5 Cpp】地图实现 玩家图标 可缩放 可拖拽&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve9.jpg", class: "btn-info"}
-                ]
-            },
-            {
-                title: "【UE5 GAS】手动实现简易GAS 游戏能力系统 面试必备 框架设计",
-                links: [
-                    {text: "仓库链接", url: "https://h5.m.goofish.com/item?id=961624475342", class: "btn-primary"},
-                    {text: "使用说明", url: "10note.html?title=【UE5 GAS】手动实现简易GAS 游戏能力系统 面试必备 框架设计&image=https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve10.jpg", class: "btn-info"}
-                ]
-            }
-        ];
-
-        // 动态生成商品卡片
-        function renderProducts() {
-            const productList = document.getElementById('product-list');
-            const serviceList = document.getElementById('service-list');
-            
-            // 渲染游戏开发商品
-            products.forEach((product, index) => {
-                const imageUrl = `https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/Imgs/eve${index}.jpg`;
-                const productCard = createCard(product.title, imageUrl, product.links);
-                productList.innerHTML += productCard;
-            });
-
-            // 渲染服务商品
-            services.forEach((service, index) => {
-                const serviceCard = createCard(service.title, service.image, service.links);
-                serviceList.innerHTML += serviceCard;
-            });
-        }
-        
-        // 创建卡片通用函数
         function createCard(title, imageUrl, links) {
             return `
                 <div class="col-md-4 mb-4">
@@ -274,7 +124,7 @@
                         <div class="card-body">
                             <h5 class="card-title">${title}</h5>
                             <div class="card-buttons">
-                                ${links.map(link => 
+                                ${links.map(link =>
                                     `<a href="${link.url}" class="btn ${link.class}" target="_blank">${link.text}</a>`
                                 ).join('')}
                             </div>
@@ -284,8 +134,32 @@
             `;
         }
 
-        // 调用函数渲染商品
-        renderProducts();
+        fetch('data/products.json')
+            .then(res => res.json())
+            .then(data => {
+                const productList = document.getElementById('product-list');
+                const serviceList = document.getElementById('service-list');
+
+                data.products.forEach(p => {
+                    const links = [
+                        { text: '仓库链接', url: p.buyLink, class: 'btn-primary' },
+                        { text: '使用说明', url: `note.html?id=${p.id}`, class: 'btn-info' }
+                    ];
+                    productList.innerHTML += createCard(p.title, p.image, links);
+                });
+
+                data.services.forEach(s => {
+                    const links = [
+                        { text: '使用说明', url: s.buyLink, class: 'btn-primary' }
+                    ];
+                    serviceList.innerHTML += createCard(s.title, s.image, links);
+                });
+            })
+            .catch(err => {
+                console.error('加载商品数据失败:', err);
+                document.getElementById('product-list').innerHTML =
+                    '<p class="text-danger text-center">加载数据失败，请刷新重试。</p>';
+            });
     </script>
 </body>
-</html>    
+</html>
