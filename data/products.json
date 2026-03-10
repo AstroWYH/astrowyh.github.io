@@ -81,7 +81,7 @@
       "id": "dialog-system",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 500行代码拿来即用",
       "image": "Imgs/dialog-system.jpg",
-      "buyLink": "",
+      "buyLink": "https://h5.m.goofish.com/item?id=1030781696181",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem\" target=\"_blank\">Gitee 仓库 - DialogSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 DialogSystem.unitypackage</p><p>2. 导入后打开 Demo_DialogSystem/Scenes/DemoScene_Dialog 场景</p><p>3. 点击 Play 运行，点击屏幕推进对话，出现选项时点击选择分支</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p>"
     }
   ],
