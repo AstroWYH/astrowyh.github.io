@@ -99,7 +99,7 @@
             document.getElementById('page-title').textContent = '参数错误';
             document.getElementById('note-content').innerHTML = '<p class="error-text">缺少商品 ID 参数。</p>';
         } else {
-            fetch('data/products.json')
+            fetch('data/products.json?t=' + Date.now())
                 .then(res => res.json())
                 .then(data => {
                     const all = [...data.products, ...(data.services || [])];

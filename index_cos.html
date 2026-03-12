@@ -130,7 +130,7 @@
             `;
         }
 
-        fetch('data/products.json')
+        fetch('data/products.json?t=' + Date.now())
             .then(res => res.json())
             .then(data => {
                 const productList = document.getElementById('product-list');
