@@ -2,6 +2,7 @@
   "products": [
     {
       "id": "mass-demo",
+      "category": "UE",
       "title": "【UE5 Cpp】Mass框架工程 性能优化 多版本运行 UE5.2运行",
       "image": "Imgs/eve0.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=900327380766",
@@ -9,6 +10,7 @@
     },
     {
       "id": "inventory",
+      "category": "UE",
       "title": "【UE5 Cpp】背包系统 MVC经典框架 UE5.2运行",
       "image": "Imgs/eve1.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=900305968938",
@@ -16,6 +18,7 @@
     },
     {
       "id": "action-rpg",
+      "category": "UE",
       "title": "【UE5 Cpp】官方动作RPG升级版 GAS最佳实践 UE5.4运行",
       "image": "Imgs/eve2.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=899199191347",
@@ -23,6 +26,7 @@
     },
     {
       "id": "bp-cpp-intro",
+      "category": "UE",
       "title": "【UE5 Cpp】蓝图/Cpp 完全对照入门Demo 游戏公司首周作业 UE5.0运行",
       "image": "Imgs/eve3.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=899199243624",
@@ -30,6 +34,7 @@
     },
     {
       "id": "shader-render",
+      "category": "UE",
       "title": "【UE5 Cpp】渲染Shader Render管线 一个工程搞定 UE5.2运行",
       "image": "Imgs/eve4.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=899197735799",
@@ -37,6 +42,7 @@
     },
     {
       "id": "lua-reflection",
+      "category": "UE",
       "title": "【UE5 Cpp】UE反射到Lua 最小系统实现 UE5.2运行",
       "image": "Imgs/eve5.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=900327220115",
@@ -44,20 +50,15 @@
     },
     {
       "id": "network-replication",
+      "category": "UE",
       "title": "【UE5 Cpp】服务器客户端 网络复制 一个工程搞懂 UE5.2运行",
       "image": "Imgs/eve6.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=899927621784",
       "note": "<p>仓库地址：<a href=\"https://gitee.com/hanbabang/ue5-net-diff\" target=\"_blank\">https://gitee.com/hanbabang/ue5-net-diff</a></p><p>步骤1：使用 git 拉取原视频仓库<a href=\"https://github.com/DruidMech/MultiplayerCourseBlasterGame\" target=\"_blank\">https://github.com/DruidMech/MultiplayerCourseBlasterGame</a></p><p>步骤2：到仓库根目录，使用 git apply diff.patch 将修复bug的指令打入。</p><p>注：使用 UE5.2 生成工程所需文件。</p>"
     },
     {
-      "id": "opencv",
-      "title": "【OpenCV Cpp】OpenCV仓库示例源码 一键运行上百示例",
-      "image": "Imgs/eve7.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=899474878887",
-      "note": "<p>注：需要使用 Linux 环境；Windows 可安装 WSL2。</p>"
-    },
-    {
       "id": "smart-pathfinder",
+      "category": "UE",
       "title": "【UE5 Cpp】多地图智能导航 BFS寻路算法 图论入门",
       "image": "Imgs/eve8.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=951690339907",
@@ -65,6 +66,7 @@
     },
     {
       "id": "minimap",
+      "category": "UE",
       "title": "【UE5 Cpp】地图实现 玩家图标 可缩放 可拖拽",
       "image": "Imgs/eve9.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=954762363040",
@@ -72,6 +74,7 @@
     },
     {
       "id": "gas-system",
+      "category": "UE",
       "title": "【UE5 GAS】手动实现简易GAS 游戏能力系统 面试必备 框架设计",
       "image": "Imgs/eve10.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=961624475342",
@@ -79,6 +82,7 @@
     },
     {
       "id": "dialog-system",
+      "category": "Unity",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 500行代码拿来即用",
       "image": "Imgs/dialog-system.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1030781696181",
@@ -86,19 +90,20 @@
     },
     {
       "id": "shop-system",
+      "category": "Unity",
       "coverName": "商城系统",
       "title": "【Unity】商城系统 购买出售+分类背包+拖拽整理 2400行代码拿来即用",
       "image": "Imgs/shop-system.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1031790796147",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/ShopSystem\" target=\"_blank\">Gitee 仓库 - ShopSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_ShopSystem.unitypackage</p><p>2. 导入后打开 Demo_ShopSystem/Scenes/DemoScene_Shop 场景</p><p>3. 点击 Play 运行，按 B 键打开商城</p><p><b>自定义商品：</b>编辑 Resources/Config/ 下的 JSON 文件，新增商品和商店只需编辑 JSON，不用改任何代码。</p>"
-    }
-  ],
-  "services": [
+    },
     {
-      "id": "remote-assist",
-      "title": "【远程协助】解决不会打开运行店铺的 UE5 Cpp 工程的环境问题",
-      "image": "Imgs/service1.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=903269689030"
+      "id": "opencv",
+      "category": "Other",
+      "title": "【OpenCV Cpp】OpenCV仓库示例源码 一键运行上百示例",
+      "image": "Imgs/eve7.jpg",
+      "buyLink": "https://h5.m.goofish.com/item?id=899474878887",
+      "note": "<p>注：需要使用 Linux 环境；Windows 可安装 WSL2。</p>"
     }
   ]
 }

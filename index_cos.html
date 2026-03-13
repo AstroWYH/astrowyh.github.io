@@ -6,156 +6,403 @@
     <title>晚上做游戏的仓库</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            --bg-primary: #0f1923;
+            --bg-secondary: #1a2736;
+            --bg-card: #1e2d3d;
+            --bg-card-hover: #243447;
+            --accent-ue: #2196f3;
+            --accent-unity: #4caf50;
+            --accent-other: #ff9800;
+            --text-primary: #e8edf2;
+            --text-secondary: #8899a6;
+            --text-muted: #5b6f80;
+            --border-subtle: rgba(255,255,255,0.06);
+            --shadow-card: 0 2px 12px rgba(0,0,0,0.3);
+            --shadow-card-hover: 0 8px 28px rgba(0,0,0,0.45);
+        }
+
+        * { box-sizing: border-box; }
+
         body {
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            font-family: 'Arial', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+                         'Microsoft YaHei', sans-serif;
+            min-height: 100vh;
         }
-        h1 {
+
+        /* ── Hero ── */
+        .hero {
             text-align: center;
-            color: #343a40;
-            margin-bottom: 30px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 60px 20px 30px;
+            background: linear-gradient(180deg, #15202b 0%, var(--bg-primary) 100%);
         }
-        .section-title {
-            margin: 30px 0 20px;
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .hero .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 28px;
+        }
+
+        /* ── Search ── */
+        .search-wrap {
+            max-width: 480px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .search-wrap svg {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px 16px 12px 44px;
+            font-size: 0.95rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .search-input::placeholder { color: var(--text-muted); }
+        .search-input:focus {
+            border-color: var(--accent-ue);
+            box-shadow: 0 0 0 3px rgba(33,150,243,0.15);
+        }
+        .search-clear {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: none;
+            padding: 4px;
+            line-height: 1;
+        }
+        .search-clear:hover { color: var(--text-secondary); }
+
+        /* ── Stats ── */
+        .stats {
+            text-align: center;
+            padding: 6px 0 0;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            transition: opacity 0.2s;
+        }
+
+        /* ── Category Section ── */
+        .content-wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 10px 15px 50px;
+        }
+        .category-section {
+            margin-top: 36px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #dee2e6;
-            color: #495057;
-            font-weight: bold;
+            border-bottom: 1px solid var(--border-subtle);
         }
-        .card {
-            height: 100%;
+        .category-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .category-dot.ue { background: var(--accent-ue); }
+        .category-dot.unity { background: var(--accent-unity); }
+        .category-dot.other { background: var(--accent-other); }
+        .category-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .category-count {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-left: 4px;
+        }
+
+        /* ── Cards ── */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .p-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
             display: flex;
             flex-direction: column;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        .p-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-card-hover);
         }
-        .card-img-container {
+        .p-card.hidden {
+            display: none;
+        }
+        .p-card-img {
             position: relative;
             padding-top: 56.25%;
             overflow: hidden;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            background: var(--bg-secondary);
         }
-        .card-img-container img {
+        .p-card-img img {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
-        .card-body {
+        .p-card:hover .p-card-img img {
+            transform: scale(1.04);
+        }
+        .p-card-body {
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 1.5rem;
+            padding: 16px 18px 18px;
         }
-        .card-title {
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #343a40;
+        .p-card-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            width: fit-content;
+            letter-spacing: 0.5px;
+        }
+        .p-card-tag.ue  { background: rgba(33,150,243,0.15); color: var(--accent-ue); }
+        .p-card-tag.unity { background: rgba(76,175,80,0.15); color: var(--accent-unity); }
+        .p-card-tag.other { background: rgba(255,152,0,0.15); color: var(--accent-other); }
+        .p-card-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.45;
+            margin-bottom: 14px;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            text-overflow: ellipsis;
         }
-        .card-buttons {
+        .p-card-btns {
             margin-top: auto;
             display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: nowrap;
+            gap: 8px;
         }
-        .card-buttons .btn {
+        .p-card-btns a {
             flex: 1;
-            min-width: 0;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.15s;
         }
-        .card-buttons .btn:hover {
-            transform: scale(1.05);
+        .btn-buy {
+            background: var(--accent-ue);
+            color: #fff;
         }
+        .btn-buy:hover {
+            background: #1b7fd4;
+            color: #fff;
+            text-decoration: none;
+            transform: scale(1.03);
+        }
+        .btn-note {
+            background: rgba(255,255,255,0.07);
+            color: var(--text-secondary);
+        }
+        .btn-note:hover {
+            background: rgba(255,255,255,0.12);
+            color: var(--text-primary);
+            text-decoration: none;
+            transform: scale(1.03);
+        }
+
+        /* ── Empty state ── */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+            display: none;
+        }
+        .empty-state svg {
+            margin-bottom: 12px;
+            opacity: 0.4;
+        }
+
+        /* ── Footer ── */
         .footer {
             text-align: center;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #6c757d;
+            padding: 30px 0 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 576px) {
+            .hero { padding: 40px 16px 24px; }
+            .hero h1 { font-size: 1.5rem; }
+            .card-grid { grid-template-columns: 1fr; gap: 16px; }
+            .content-wrap { padding: 10px 12px 40px; }
         }
     </style>
 </head>
 <body>
-    <div class="container mt-5">
+
+    <!-- Hero -->
+    <div class="hero">
         <h1>晚上做游戏的仓库</h1>
-
-        <h2 class="section-title">游戏开发仓库</h2>
-        <div id="product-list" class="row"></div>
-
-        <h2 class="section-title">答疑服务</h2>
-        <div id="service-list" class="row"></div>
-
-        <div class="footer">
-            © 2026 Night Gamer, Inc. All Rights Reserved.
+        <p class="subtitle">游戏开发 Demo · 注释详尽 · 拿来即用</p>
+        <div class="search-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input class="search-input" id="searchInput" type="text" placeholder="搜索项目，如 背包、Shader、对话…">
+            <button class="search-clear" id="searchClear" title="清除">&times;</button>
         </div>
+        <div class="stats" id="stats"></div>
     </div>
 
+    <!-- Content -->
+    <div class="content-wrap" id="content"></div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <p>没有找到匹配的项目</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">© 2026 Night Gamer, Inc. All Rights Reserved.</div>
+
     <script>
-        function createCard(title, imageUrl, links) {
-            return `
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="${imageUrl}" class="card-img-top" alt="${title}">
+        const CATEGORIES = [
+            { key: 'UE',    label: 'Unreal Engine', css: 'ue' },
+            { key: 'Unity', label: 'Unity',          css: 'unity' },
+            { key: 'Other', label: '其他',            css: 'other' }
+        ];
+
+        let allProducts = [];
+
+        /* ── Render ── */
+        function render(products) {
+            const content = document.getElementById('content');
+            const empty   = document.getElementById('emptyState');
+            const stats   = document.getElementById('stats');
+
+            if (products.length === 0) {
+                content.innerHTML = '';
+                empty.style.display = 'block';
+                stats.textContent = '';
+                return;
+            }
+            empty.style.display = 'none';
+
+            let html = '';
+            CATEGORIES.forEach(cat => {
+                const items = products.filter(p => p.category === cat.key);
+                if (items.length === 0) return;
+
+                html += `
+                    <div class="category-section">
+                        <div class="category-header">
+                            <span class="category-dot ${cat.css}"></span>
+                            <span class="category-label">${cat.label}</span>
+                            <span class="category-count">${items.length} 个项目</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">${title}</h5>
-                            <div class="card-buttons">
-                                ${links.map(link =>
-                                    `<a href="${link.url}" class="btn ${link.class}" target="_blank">${link.text}</a>`
-                                ).join('')}
-                            </div>
+                        <div class="card-grid">
+                            ${items.map(p => cardHTML(p, cat)).join('')}
                         </div>
-                    </div>
-                </div>
-            `;
+                    </div>`;
+            });
+
+            content.innerHTML = html;
+
+            const q = document.getElementById('searchInput').value.trim();
+            stats.textContent = q
+                ? `找到 ${products.length} 个匹配项目`
+                : `共 ${allProducts.length} 个项目`;
         }
 
-        fetch('data/products.json?t=' + Date.now())
-            .then(res => res.json())
-            .then(data => {
-                const productList = document.getElementById('product-list');
-                const serviceList = document.getElementById('service-list');
+        function cardHTML(p, cat) {
+            return `
+                <div class="p-card" data-title="${p.title}">
+                    <div class="p-card-img">
+                        <img src="${p.image}" alt="${p.title}" loading="lazy">
+                    </div>
+                    <div class="p-card-body">
+                        <span class="p-card-tag ${cat.css}">${cat.label}</span>
+                        <div class="p-card-title">${p.title}</div>
+                        <div class="p-card-btns">
+                            <a href="${p.buyLink}" class="btn-buy" target="_blank">仓库链接</a>
+                            <a href="note.html?id=${p.id}" class="btn-note" target="_blank">使用说明</a>
+                        </div>
+                    </div>
+                </div>`;
+        }
 
-                data.products.forEach(p => {
-                    const links = [
-                        { text: '仓库链接', url: p.buyLink, class: 'btn-primary' },
-                        { text: '使用说明', url: `note.html?id=${p.id}`, class: 'btn-info' }
-                    ];
-                    productList.innerHTML += createCard(p.title, p.image, links);
-                });
+        /* ── Search ── */
+        function doSearch() {
+            const raw = document.getElementById('searchInput').value.trim().toLowerCase();
+            const clearBtn = document.getElementById('searchClear');
+            clearBtn.style.display = raw ? 'block' : 'none';
 
-                data.services.forEach(s => {
-                    const links = [
-                        { text: '使用说明', url: s.buyLink, class: 'btn-primary' }
-                    ];
-                    serviceList.innerHTML += createCard(s.title, s.image, links);
-                });
-            })
-            .catch(err => {
-                console.error('加载商品数据失败:', err);
-                document.getElementById('product-list').innerHTML =
-                    '<p class="text-danger text-center">加载数据失败，请刷新重试。</p>';
+            if (!raw) { render(allProducts); return; }
+
+            const tokens = raw.split(/\s+/);
+            const matched = allProducts.filter(p => {
+                const t = p.title.toLowerCase();
+                return tokens.every(tok => t.includes(tok));
             });
+            render(matched);
+        }
+
+        /* ── Init ── */
+        fetch('data/products.json?t=' + Date.now())
+            .then(r => r.json())
+            .then(data => {
+                allProducts = data.products || [];
+                render(allProducts);
+            })
+            .catch(() => {
+                document.getElementById('content').innerHTML =
+                    '<p style="text-align:center;color:#e74c3c;padding:40px;">加载数据失败，请刷新重试。</p>';
+            });
+
+        document.getElementById('searchInput').addEventListener('input', doSearch);
+        document.getElementById('searchClear').addEventListener('click', () => {
+            document.getElementById('searchInput').value = '';
+            doSearch();
+            document.getElementById('searchInput').focus();
+        });
     </script>
 </body>
 </html>

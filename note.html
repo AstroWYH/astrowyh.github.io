@@ -102,7 +102,7 @@
             fetch('data/products.json?t=' + Date.now())
                 .then(res => res.json())
                 .then(data => {
-                    const all = [...data.products, ...(data.services || [])];
+                    const all = data.products || [];
                     const item = all.find(p => p.id === productId);
 
                     if (!item) {
