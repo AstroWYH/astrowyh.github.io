@@ -1,6 +1,32 @@
 {
   "products": [
     {
+      "id": "dialog-system",
+      "category": "Unity",
+      "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 导入即运行 注释详尽",
+      "image": "Imgs/dialog-system.jpg",
+      "buyLink": "https://h5.m.goofish.com/item?id=1030781696181",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem\" target=\"_blank\">Gitee 仓库 - DialogSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 DialogSystem.unitypackage</p><p>2. 导入后打开 Demo_DialogSystem/Scenes/DemoScene_Dialog 场景</p><p>3. 点击 Play 运行，点击屏幕推进对话，出现选项时点击选择分支</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p>"
+    },
+    {
+      "id": "shop-system",
+      "category": "Unity",
+      "coverName": "商城系统",
+      "title": "【Unity】商城系统 购买出售+分类背包+拖拽整理 导入即运行 注释详尽",
+      "image": "Imgs/shop-system.jpg",
+      "buyLink": "https://h5.m.goofish.com/item?id=1031790796147",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/ShopSystem\" target=\"_blank\">Gitee 仓库 - ShopSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_ShopSystem.unitypackage</p><p>2. 导入后打开 Demo_ShopSystem/Scenes/DemoScene_Shop 场景</p><p>3. 点击 Play 运行，按 B 键打开商城</p><p><b>自定义商品：</b>编辑 Resources/Config/ 下的 JSON 文件，新增商品和商店只需编辑 JSON，不用改任何代码。</p>"
+    },
+    {
+      "id": "quest-system",
+      "category": "Unity",
+      "coverName": "任务系统",
+      "title": "【Unity】任务系统 NPC交互+物品收集+任务链+进度追踪 导入即运行 注释详尽",
+      "image": "Imgs/quest-system.jpg",
+      "buyLink": "https://h5.m.goofish.com/item?id=1033011341605",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/QuestSystem\" target=\"_blank\">Gitee 仓库 - QuestSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_QuestSystem.unitypackage</p><p>2. 导入后打开 Demo_QuestSystem/Scenes/DemoScene_Quest 场景</p><p>3. 点击 Play 运行，WASD 移动角色，走近 NPC 按 E 交互</p><p><b>自定义任务：</b>编辑 Resources/Config/quest_database.json，按格式添加任务即可，不用改任何代码。</p>"
+    },
+    {
       "id": "mass-demo",
       "category": "UE",
       "title": "【UE5 Cpp】Mass框架工程 性能优化 多版本运行 UE5.2运行",
@@ -79,32 +105,6 @@
       "image": "Imgs/eve10.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=961624475342",
       "note": "<p>仓库地址：<a href=\"https://gitee.com/hanbabang/eve-gas-csharp\" target=\"_blank\">https://gitee.com/hanbabang/eve-gas-csharp</a></p><p>注：可直接vs2022打开sln运行。如果因为版本原因无法打开，则用户自己用vs2022创建C#控制台程序，将全部.cs文件拷贝后运行即可。</p>"
-    },
-    {
-      "id": "dialog-system",
-      "category": "Unity",
-      "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 导入即运行 注释详尽",
-      "image": "Imgs/dialog-system.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=1030781696181",
-      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem\" target=\"_blank\">Gitee 仓库 - DialogSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 DialogSystem.unitypackage</p><p>2. 导入后打开 Demo_DialogSystem/Scenes/DemoScene_Dialog 场景</p><p>3. 点击 Play 运行，点击屏幕推进对话，出现选项时点击选择分支</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p>"
-    },
-    {
-      "id": "shop-system",
-      "category": "Unity",
-      "coverName": "商城系统",
-      "title": "【Unity】商城系统 购买出售+分类背包+拖拽整理 导入即运行 注释详尽",
-      "image": "Imgs/shop-system.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=1031790796147",
-      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/ShopSystem\" target=\"_blank\">Gitee 仓库 - ShopSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_ShopSystem.unitypackage</p><p>2. 导入后打开 Demo_ShopSystem/Scenes/DemoScene_Shop 场景</p><p>3. 点击 Play 运行，按 B 键打开商城</p><p><b>自定义商品：</b>编辑 Resources/Config/ 下的 JSON 文件，新增商品和商店只需编辑 JSON，不用改任何代码。</p>"
-    },
-    {
-      "id": "quest-system",
-      "category": "Unity",
-      "coverName": "任务系统",
-      "title": "【Unity】任务系统 NPC交互+物品收集+任务链+进度追踪 导入即运行 注释详尽",
-      "image": "Imgs/quest-system.jpg",
-      "buyLink": "",
-      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/QuestSystem\" target=\"_blank\">Gitee 仓库 - QuestSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_QuestSystem.unitypackage</p><p>2. 导入后打开 Demo_QuestSystem/Scenes/DemoScene_Quest 场景</p><p>3. 点击 Play 运行，WASD 移动角色，走近 NPC 按 E 交互</p><p><b>自定义任务：</b>编辑 Resources/Config/quest_database.json，按格式添加任务即可，不用改任何代码。</p>"
     },
     {
       "id": "opencv",
