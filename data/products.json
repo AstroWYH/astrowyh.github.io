@@ -1,12 +1,28 @@
 {
   "products": [
     {
+      "id": "dialog-system-dual",
+      "category": "Dual",
+      "title": "【Unity×Godot】对话系统 JSON驱动+分支对话+打字机效果 导入即运行 注释详尽",
+      "image": "Imgs/dialog-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>本商品包含 Unity 版 + Godot 版，双引擎同一架构。</b></p><p><b>Unity 版下载：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem\" target=\"_blank\">Gitee - DialogSystem</a></p><p><b>Godot 版下载：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem_Godot\" target=\"_blank\">Gitee - DialogSystem_Godot</a></p><p><b>解压说明：</b>下载 .7z 文件，右键 → 7-Zip → 解压，输入购买后获取的密码（Unity 和 Godot 密码不同，购买后均会提供）。</p><p><b>Unity 环境要求：</b>Unity 2021.3 LTS 或更新版本，任意渲染管线均可。</p><p><b>Godot 环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>Unity 使用步骤：</b></p><p>1. Assets → Import Package → Custom Package → 选择 DialogSystem.unitypackage</p><p>2. 打开 Demo_DialogSystem/Scenes/DemoScene_Dialog 场景 → Play</p><p><b>Godot 使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后的 project.godot</p><p>2. 打开 Demo_DialogSystem/Scenes/demo_scene_dialog.tscn → F5 运行</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p>"
+    },
+    {
       "id": "dialog-system",
       "category": "Unity",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 导入即运行 注释详尽",
       "image": "Imgs/dialog-system.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1030781696181",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem\" target=\"_blank\">Gitee 仓库 - DialogSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 DialogSystem.unitypackage</p><p>2. 导入后打开 Demo_DialogSystem/Scenes/DemoScene_Dialog 场景</p><p>3. 点击 Play 运行，点击屏幕推进对话，出现选项时点击选择分支</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p>"
+    },
+    {
+      "id": "dialog-system-godot",
+      "category": "Godot",
+      "title": "【Godot】对话系统 JSON驱动+分支对话+打字机效果 导入即运行 注释详尽",
+      "image": "Imgs/dialog-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/DialogSystem_Godot\" target=\"_blank\">Gitee 仓库 - DialogSystem_Godot</a></p><p><b>解压说明：</b>下载 DialogSystem_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_DialogSystem/Scenes/demo_scene_dialog.tscn，双击打开</p><p>3. 按 F5 运行，点击屏幕或按空格键推进对话</p><p><b>自定义对话：</b>编辑 Resources/Config/dialog_001.json，按格式修改节点即可，不用改任何代码。</p>"
     },
     {
       "id": "shop-system",
