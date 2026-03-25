@@ -52,6 +52,15 @@
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/ShopSystem_Godot\" target=\"_blank\">Gitee 仓库 - ShopSystem_Godot</a></p><p><b>解压说明：</b>下载 ShopSystem_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_ShopSystem/Scenes/demo_scene_shop.tscn，双击打开</p><p>3. 按 F5 运行，商城自动打开，关闭后按空格重新打开</p><p><b>自定义商品：</b>编辑 Resources/Config/ 下的 JSON 文件，不用改任何代码。</p>"
     },
     {
+      "id": "quest-system-dual",
+      "category": "Dual",
+      "coverName": "任务系统",
+      "title": "【Unity×Godot】任务系统 NPC交互+物品收集+任务链+进度追踪 导入即运行 注释详尽",
+      "image": "Imgs/quest-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>本商品包含 Unity 版 + Godot 版，双引擎同一架构。</b></p><p><b>Unity 版下载：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/QuestSystem\" target=\"_blank\">Gitee - QuestSystem</a></p><p><b>Godot 版下载：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/QuestSystem_Godot\" target=\"_blank\">Gitee - QuestSystem_Godot</a></p><p><b>解压说明：</b>下载 .7z 文件，右键 → 7-Zip → 解压，输入购买后获取的密码（Unity 和 Godot 密码不同，购买后均会提供）。</p><p><b>Unity 环境要求：</b>Unity 2021.3 LTS 或更新版本，任意渲染管线均可。</p><p><b>Godot 环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>Unity 使用步骤：</b></p><p>1. Assets → Import Package → Custom Package → 选择 Demo_QuestSystem.unitypackage</p><p>2. 打开 Demo_QuestSystem/Scenes/DemoScene_Quest 场景 → Play</p><p><b>Godot 使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后的 project.godot</p><p>2. 打开 Demo_QuestSystem/Scenes/demo_scene_quest.tscn → F5 运行</p><p><b>自定义任务：</b>编辑 Resources/Config/quest_database.json，按格式添加任务即可，不用改任何代码。</p>"
+    },
+    {
       "id": "quest-system",
       "category": "Unity",
       "coverName": "任务系统",
@@ -59,6 +68,15 @@
       "image": "Imgs/quest-system.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1033011341605",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/QuestSystem\" target=\"_blank\">Gitee 仓库 - QuestSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_QuestSystem.unitypackage</p><p>2. 导入后打开 Demo_QuestSystem/Scenes/DemoScene_Quest 场景</p><p>3. 点击 Play 运行，WASD 移动角色，走近 NPC 按 E 交互</p><p><b>自定义任务：</b>编辑 Resources/Config/quest_database.json，按格式添加任务即可，不用改任何代码。</p>"
+    },
+    {
+      "id": "quest-system-godot",
+      "category": "Godot",
+      "coverName": "任务系统",
+      "title": "【Godot】任务系统 NPC交互+物品收集+任务链+进度追踪 导入即运行 注释详尽",
+      "image": "Imgs/quest-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/QuestSystem_Godot\" target=\"_blank\">Gitee 仓库 - QuestSystem_Godot</a></p><p><b>解压说明：</b>下载 QuestSystem_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_QuestSystem/Scenes/demo_scene_quest.tscn，双击打开</p><p>3. 按 F5 运行，WASD 移动角色，走近 NPC 按 E 交互</p><p><b>自定义任务：</b>编辑 Resources/Config/quest_database.json，按格式添加任务即可，不用改任何代码。</p>"
     },
     {
       "id": "mass-demo",
