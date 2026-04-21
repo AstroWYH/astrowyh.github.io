@@ -12,6 +12,7 @@
             --bg-card: #1e2d3d;
             --bg-card-hover: #243447;
             --accent-dual: #e91e63;
+            --accent-unitypro: #a855f7;
             --accent-unity: #4caf50;
             --accent-godot: #478cbf;
             --accent-ue: #2196f3;
@@ -132,6 +133,7 @@
             flex-shrink: 0;
         }
         .category-dot.dual { background: var(--accent-dual); }
+        .category-dot.unitypro { background: var(--accent-unitypro); }
         .category-dot.unity { background: var(--accent-unity); }
         .category-dot.godot { background: var(--accent-godot); }
         .category-dot.ue { background: var(--accent-ue); }
@@ -202,11 +204,12 @@
             width: fit-content;
             letter-spacing: 0.5px;
         }
-        .p-card-tag.dual  { background: rgba(233,30,99,0.15); color: var(--accent-dual); }
-        .p-card-tag.unity { background: rgba(76,175,80,0.15); color: var(--accent-unity); }
-        .p-card-tag.godot { background: rgba(71,140,191,0.15); color: var(--accent-godot); }
-        .p-card-tag.ue    { background: rgba(33,150,243,0.15); color: var(--accent-ue); }
-        .p-card-tag.other { background: rgba(255,152,0,0.15); color: var(--accent-other); }
+        .p-card-tag.dual     { background: rgba(233,30,99,0.15);  color: var(--accent-dual); }
+        .p-card-tag.unitypro { background: rgba(168,85,247,0.18); color: var(--accent-unitypro); }
+        .p-card-tag.unity    { background: rgba(76,175,80,0.15);  color: var(--accent-unity); }
+        .p-card-tag.godot    { background: rgba(71,140,191,0.15); color: var(--accent-godot); }
+        .p-card-tag.ue       { background: rgba(33,150,243,0.15); color: var(--accent-ue); }
+        .p-card-tag.other    { background: rgba(255,152,0,0.15);  color: var(--accent-other); }
         .p-card-title {
             font-size: 0.95rem;
             font-weight: 600;
@@ -311,11 +314,12 @@
 
     <script>
         const CATEGORIES = [
-            { key: 'Dual',  label: '双引擎版本',     css: 'dual' },
-            { key: 'Unity', label: 'Unity',          css: 'unity' },
-            { key: 'Godot', label: 'Godot',          css: 'godot' },
-            { key: 'UE',    label: 'Unreal Engine',  css: 'ue' },
-            { key: 'Other', label: '其他',            css: 'other' }
+            { key: 'Dual',     label: '双引擎版本',     css: 'dual' },
+            { key: 'UnityPro', label: 'Unity 专题',     css: 'unitypro' },
+            { key: 'Unity',    label: 'Unity',          css: 'unity' },
+            { key: 'Godot',    label: 'Godot',          css: 'godot' },
+            { key: 'UE',       label: 'Unreal Engine',  css: 'ue' },
+            { key: 'Other',    label: '其他',            css: 'other' }
         ];
 
         let allProducts = [];
