@@ -199,7 +199,7 @@
       "coverName": "URP 描边&高亮",
       "title": "URP 描边三合一！模型挤出 + 全屏 Sobel + 选中 X-Ray，同场景切换对比",
       "image": "Imgs/urp-outline-pack.jpg",
-      "buyLink": "",
+      "buyLink": "https://h5.m.goofish.com/item?id=1036309485193",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/UrpOutlinePack_Unity\" target=\"_blank\">Gitee - UrpOutlinePack_Unity</a></p><p><b>解压说明：</b>下载 <code>Demo_UrpOutlinePack.7z.001</code>，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2022.3 LTS + URP 14+。须为 URP 项目。导入后打开 <code>Assets/Demo_UrpOutlinePack/Docs/README.md</code>，执行菜单 <b>AstroDemos → URP Outline Pack → 1. Setup All Assets</b> 与 <b>2. Switch Quality To Outline Pipeline</b>。</p><p><b>运行：</b>打开 <code>Assets/Demo_UrpOutlinePack/Scenes/demo_scene_outline.unity</code> → Play。</p>"
     }
   ]
