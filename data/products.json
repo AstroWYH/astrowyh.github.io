@@ -116,7 +116,7 @@
       "coverName": "卡牌对战",
       "title": "【Unity】卡牌对战 回合制战斗+敌人意图+牌堆洗牌 导入即运行 注释详尽",
       "image": "Imgs/card-battle.jpg",
-      "buyLink": "",
+      "buyLink": "https://h5.m.goofish.com/item?id=1052433658151",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/CardBattle_Unity\" target=\"_blank\">Gitee 仓库 - CardBattle_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_CardBattle.unitypackage</p><p>2. 导入后打开 Demo_CardBattle/Scenes/DemoScene_CardBattle.unity 场景</p><p>3. 点击 Play 运行，点击手牌出牌，点结束回合进入敌人回合</p><p><b>自定义卡牌：</b>编辑 Resources/Config/card_database.json 和 battle_config.json，即可修改卡牌、牌组、血量与敌人意图，不用改核心战斗代码。</p>"
     },
     {
@@ -169,7 +169,7 @@
       "coverName": "卡牌对战",
       "title": "【Godot】卡牌对战 回合制战斗+敌人意图+牌堆洗牌 导入即运行 注释详尽",
       "image": "Imgs/card-battle.jpg",
-      "buyLink": "",
+      "buyLink": "https://h5.m.goofish.com/item?id=1053409525028",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/CardBattle_Godot\" target=\"_blank\">Gitee 仓库 - CardBattle_Godot</a></p><p><b>解压说明：</b>下载 CardBattle_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_CardBattle/Scenes/demo_scene_card_battle.tscn，双击打开</p><p>3. 按 F5 运行，点击手牌出牌，点结束回合进入敌人回合</p><p><b>自定义卡牌：</b>编辑 Demo_CardBattle/Resources/Config/card_database.json 和 battle_config.json，即可修改卡牌、牌组、血量与敌人意图，不用改核心战斗代码。</p>"
     },
     {
