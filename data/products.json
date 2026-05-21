@@ -111,6 +111,15 @@
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/MapSystem_Unity\" target=\"_blank\">Gitee 仓库 - MapSystem</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2022.3 LTS 或更新版本（推荐 Universal 3D URP 模板）。</p><p><b>使用步骤：</b></p><p>1. 新建 Universal 3D (URP) 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_MapSystem.unitypackage</p><p>2. 导入后打开 Demo_MapSystem/Scenes/DemoScene_MapSystem 场景</p><p>3. 点击 Play 运行，WASD 移动角色，M 打开大地图</p><p><b>自定义地图：</b>编辑 Resources/Config/map_config.json，添加 POI 和区域即可，不用改任何代码。</p>"
     },
     {
+      "id": "card-battle",
+      "category": "Unity",
+      "coverName": "卡牌对战",
+      "title": "【Unity】卡牌对战 回合制战斗+敌人意图+牌堆洗牌 导入即运行 注释详尽",
+      "image": "Imgs/card-battle.jpg",
+      "buyLink": "",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/CardBattle_Unity\" target=\"_blank\">Gitee 仓库 - CardBattle_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_CardBattle.unitypackage</p><p>2. 导入后打开 Demo_CardBattle/Scenes/DemoScene_CardBattle.unity 场景</p><p>3. 点击 Play 运行，点击手牌出牌，点结束回合进入敌人回合</p><p><b>自定义卡牌：</b>编辑 Resources/Config/card_database.json 和 battle_config.json，即可修改卡牌、牌组、血量与敌人意图，不用改核心战斗代码。</p>"
+    },
+    {
       "id": "urp-outline-pack",
       "category": "Unity",
       "coverName": "URP 描边&高亮",
@@ -153,6 +162,15 @@
       "image": "Imgs/map-system.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1038883453901",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/MapSystem_Godot\" target=\"_blank\">Gitee 仓库 - MapSystem_Godot</a></p><p><b>解压说明：</b>下载 MapSystem_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_MapSystem/Scenes/demo_scene_map.tscn，双击打开</p><p>3. 按 F5 运行，WASD 移动角色，M 打开世界地图</p><p><b>自定义地图：</b>编辑 Resources/Config/map_config.json，添加 POI 和区域即可，不用改任何代码。</p>"
+    },
+    {
+      "id": "card-battle-godot",
+      "category": "Godot",
+      "coverName": "卡牌对战",
+      "title": "【Godot】卡牌对战 回合制战斗+敌人意图+牌堆洗牌 导入即运行 注释详尽",
+      "image": "Imgs/card-battle.jpg",
+      "buyLink": "",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/CardBattle_Godot\" target=\"_blank\">Gitee 仓库 - CardBattle_Godot</a></p><p><b>解压说明：</b>下载 CardBattle_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_CardBattle/Scenes/demo_scene_card_battle.tscn，双击打开</p><p>3. 按 F5 运行，点击手牌出牌，点结束回合进入敌人回合</p><p><b>自定义卡牌：</b>编辑 Demo_CardBattle/Resources/Config/card_database.json 和 battle_config.json，即可修改卡牌、牌组、血量与敌人意图，不用改核心战斗代码。</p>"
     },
     {
       "id": "mass-demo",
