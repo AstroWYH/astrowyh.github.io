@@ -33,6 +33,14 @@
       "note": "<p>本商品包含本站所有 Unreal Engine 项目。</p><p>各项目的具体使用说明，请在本页下方的 <b>UE</b> 栏目中找到对应项目查看。</p>"
     },
     {
+      "id": "custom-discount-pack",
+      "category": "Sale",
+      "title": "【自选折扣包】跨栏目任选多件 2-4件8折 / 5件及以上7折",
+      "image": "Imgs/custom-discount-pack.jpg",
+      "buyLink": "https://h5.m.goofish.com/item?id=1053318093494",
+      "note": "<p><b>这是什么？</b></p><p>如果现有的折扣包不能满足你的需求，你可以从 Unity / Godot / UE 三个栏目中<b>自由挑选任意多件</b>项目，享受阶梯折扣：</p><ul><li>1 件：原价</li><li>2-4 件：<b>8 折</b></li><li>5 件及以上：<b>7 折</b></li></ul><p><b>怎么买？</b></p><ol><li>点击下方「获取」打开闲鱼专拍链接</li><li>私聊告诉我你想要哪几个，<b>直接说项目名就行</b></li><li>例如：「我要 对话系统Unity + 任务系统Godot + 背包系统UE」</li><li>我会按件数算好折扣价，改价后你直接拍</li></ol><p><b>注意：</b>自选包需要我手动改价，通常 1-2 小时内处理，最迟当天回复。着急的话建议直接选上方的固定折扣包（自动发货秒到）。</p>"
+    },
+    {
       "id": "dialog-system-bundle",
       "category": "Sale",
       "title": "【限时折扣】对话系统 Unity+Godot 双版本捆绑",
