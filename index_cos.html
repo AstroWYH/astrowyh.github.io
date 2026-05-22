@@ -374,7 +374,7 @@
         function cardHTML(p, cat) {
             const hasLink = p.buyLink && p.buyLink.trim() !== '';
             const buyBtn = hasLink
-                ? `<a href="${p.buyLink}" class="btn-buy" target="_blank">获取</a>`
+                ? `<a href="${p.buyLink}" class="btn-buy" target="_blank">购买</a>`
                 : `<span class="btn-buy disabled">敬请期待</span>`;
             return `
                 <div class="p-card" data-title="${p.title}">
@@ -386,7 +386,7 @@
                         <div class="p-card-title">${p.title}</div>
                         <div class="p-card-btns">
                             ${buyBtn}
-                            <a href="note.html?id=${p.id}" class="btn-note" target="_blank">使用说明</a>
+                            <a href="note.html?id=${p.id}" class="btn-note" target="_blank">获取</a>
                         </div>
                     </div>
                 </div>`;
