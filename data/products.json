@@ -76,6 +76,15 @@
       "note": "<p>本商品包含地图系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「地图系统」即可。</p>"
     },
     {
+      "id": "dungeon-system-bundle",
+      "category": "Sale",
+      "coverName": "随机地牢生成",
+      "title": "【限时折扣】随机地牢生成 Unity+Godot 双版本捆绑",
+      "image": "Imgs/sale-pack.jpg",
+      "buyLink": "",
+      "note": "<p>本商品包含随机地牢生成系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「随机地牢生成」即可。</p>"
+    },
+    {
       "id": "dialog-system",
       "category": "Unity",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 导入即运行 注释详尽",
@@ -118,6 +127,15 @@
       "image": "Imgs/card-battle.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1052433658151",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/CardBattle_Unity\" target=\"_blank\">Gitee 仓库 - CardBattle_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_CardBattle.unitypackage</p><p>2. 导入后打开 Demo_CardBattle/Scenes/DemoScene_CardBattle.unity 场景</p><p>3. 点击 Play 运行，点击手牌出牌，点结束回合进入敌人回合</p><p><b>自定义卡牌：</b>编辑 Resources/Config/card_database.json 和 battle_config.json，即可修改卡牌、牌组、血量与敌人意图，不用改核心战斗代码。</p>"
+    },
+    {
+      "id": "dungeon-system",
+      "category": "Unity",
+      "coverName": "随机地牢生成",
+      "title": "【Unity】随机地牢生成 以撒风格房间式+随机游走算法+迷雾小地图 导入即运行 注释详尽",
+      "image": "Imgs/dungeon-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Dungeon_Unity\" target=\"_blank\">Gitee 仓库 - Dungeon_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_Dungeon.unitypackage</p><p>2. 导入后打开 Demo_Dungeon/Scenes/DemoScene_Dungeon 场景</p><p>3. 点击 Play 运行，WASD 移动角色，走到门口自动切换房间</p><p><b>自定义配置：</b>编辑 Resources/Config/dungeon_config.json，修改房间数量、尺寸、速度等参数，不用改任何代码。</p>"
     },
     {
       "id": "urp-outline-pack",
@@ -171,6 +189,15 @@
       "image": "Imgs/card-battle.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1053409525028",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/CardBattle_Godot\" target=\"_blank\">Gitee 仓库 - CardBattle_Godot</a></p><p><b>解压说明：</b>下载 CardBattle_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_CardBattle/Scenes/demo_scene_card_battle.tscn，双击打开</p><p>3. 按 F5 运行，点击手牌出牌，点结束回合进入敌人回合</p><p><b>自定义卡牌：</b>编辑 Demo_CardBattle/Resources/Config/card_database.json 和 battle_config.json，即可修改卡牌、牌组、血量与敌人意图，不用改核心战斗代码。</p>"
+    },
+    {
+      "id": "dungeon-system-godot",
+      "category": "Godot",
+      "coverName": "随机地牢生成",
+      "title": "【Godot】随机地牢生成 以撒风格房间式+随机游走算法+迷雾小地图 导入即运行 注释详尽",
+      "image": "Imgs/dungeon-system.jpg",
+      "buyLink": "",
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Dungeon_Godot\" target=\"_blank\">Gitee 仓库 - Dungeon_Godot</a></p><p><b>解压说明：</b>下载 Dungeon_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_Dungeon/Scenes/demo_scene_dungeon.tscn，双击打开</p><p>3. 按 F5 运行，WASD 移动角色，走到门口自动切换房间</p><p><b>自定义配置：</b>编辑 Resources/Config/dungeon_config.json，修改房间数量、尺寸、速度等参数，不用改任何代码。</p>"
     },
     {
       "id": "mass-demo",
