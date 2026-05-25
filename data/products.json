@@ -76,15 +76,6 @@
       "note": "<p>本商品包含地图系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「地图系统」即可。</p>"
     },
     {
-      "id": "dungeon-system-bundle",
-      "category": "Sale",
-      "coverName": "随机地牢生成",
-      "title": "【限时折扣】随机地牢生成 Unity+Godot 双版本捆绑",
-      "image": "Imgs/sale-pack.jpg",
-      "buyLink": "",
-      "note": "<p>本商品包含随机地牢生成系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「随机地牢生成」即可。</p>"
-    },
-    {
       "id": "dialog-system",
       "category": "Unity",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 导入即运行 注释详尽",
