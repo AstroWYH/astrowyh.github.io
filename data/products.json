@@ -125,7 +125,7 @@
       "coverName": "随机地牢生成",
       "title": "【Unity】随机地牢生成 以撒风格房间式+随机游走算法+迷雾小地图 导入即运行 注释详尽",
       "image": "Imgs/dungeon-system.jpg",
-      "buyLink": "",
+      "buyLink": "https://h5.m.goofish.com/item?id=1053441343534",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Dungeon_Unity\" target=\"_blank\">Gitee 仓库 - Dungeon_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>⚠️ Mac 用户：</b>macOS 自带的归档工具不支持 .7z 加密，双击会提示密码错误。请在 App Store 安装免费的 <b>The Unarchiver</b>，右键文件 → 打开方式 → The Unarchiver，输入密码即可正常解压。也可用 <a href=\"https://www.keka.io/\" target=\"_blank\">Keka</a> 或命令行 <code>brew install p7zip && 7za x 文件名.7z</code>。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_Dungeon.unitypackage</p><p>2. 导入后打开 Demo_Dungeon/Scenes/DemoScene_Dungeon 场景</p><p>3. 点击 Play 运行，WASD 移动角色，走到门口自动切换房间</p><p><b>自定义配置：</b>编辑 Resources/Config/dungeon_config.json，修改房间数量、尺寸、速度等参数，不用改任何代码。</p>"
     },
     {
@@ -187,7 +187,7 @@
       "coverName": "随机地牢生成",
       "title": "【Godot】随机地牢生成 以撒风格房间式+随机游走算法+迷雾小地图 导入即运行 注释详尽",
       "image": "Imgs/dungeon-system.jpg",
-      "buyLink": "",
+      "buyLink": "https://h5.m.goofish.com/item?id=1056116312344",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Dungeon_Godot\" target=\"_blank\">Gitee 仓库 - Dungeon_Godot</a></p><p><b>解压说明：</b>下载 Dungeon_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>⚠️ Mac 用户：</b>macOS 自带的归档工具不支持 .7z 加密，双击会提示密码错误。请在 App Store 安装免费的 <b>The Unarchiver</b>，右键文件 → 打开方式 → The Unarchiver，输入密码即可正常解压。也可用 <a href=\"https://www.keka.io/\" target=\"_blank\">Keka</a> 或命令行 <code>brew install p7zip && 7za x 文件名.7z</code>。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_Dungeon/Scenes/demo_scene_dungeon.tscn，双击打开</p><p>3. 按 F5 运行，WASD 移动角色，走到门口自动切换房间</p><p><b>自定义配置：</b>编辑 Resources/Config/dungeon_config.json，修改房间数量、尺寸、速度等参数，不用改任何代码。</p>"
     },
     {
