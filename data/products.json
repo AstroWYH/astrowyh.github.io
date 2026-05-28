@@ -38,42 +38,7 @@
       "title": "【自选折扣包】跨栏目任选多件 2-4件8折 / 5件及以上7折",
       "image": "Imgs/custom-discount-pack.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1053318093494",
-      "note": "<p><b>这是什么？</b></p><p>如果现有的折扣包不能满足你的需求，你可以从 Unity / Godot / UE 三个栏目中<b>自由挑选任意多件</b>项目，享受阶梯折扣：</p><ul><li>1 件：原价</li><li>2-4 件：<b>8 折</b></li><li>5 件及以上：<b>7 折</b></li></ul><p><b>怎么买？</b></p><ol><li>点击下方「获取」打开闲鱼专拍链接</li><li>私聊告诉我你想要哪几个，<b>直接说项目名就行</b></li><li>例如：「我要 对话系统Unity + 任务系统Godot + 背包系统UE」</li><li>我会按件数算好折扣价，改价后你直接拍</li></ol><p><b>注意：</b>自选包需要我手动改价，通常 1-2 小时内处理，最迟当天回复。着急的话建议直接选上方的固定折扣包（自动发货秒到）。</p>"
-    },
-    {
-      "id": "dialog-system-bundle",
-      "category": "Sale",
-      "title": "【限时折扣】对话系统 Unity+Godot 双版本捆绑",
-      "image": "Imgs/sale-pack.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=1036309485193",
-      "note": "<p>本商品包含对话系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「对话系统」即可。</p>"
-    },
-    {
-      "id": "shop-system-bundle",
-      "category": "Sale",
-      "coverName": "商店&背包系统",
-      "title": "【限时折扣】商店&背包系统 Unity+Godot 双版本捆绑",
-      "image": "Imgs/sale-pack.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=1035083111094",
-      "note": "<p>本商品包含商店&背包系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「商店&背包系统」即可。</p>"
-    },
-    {
-      "id": "quest-system-bundle",
-      "category": "Sale",
-      "coverName": "任务系统",
-      "title": "【限时折扣】任务系统 Unity+Godot 双版本捆绑",
-      "image": "Imgs/sale-pack.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=1035791626748",
-      "note": "<p>本商品包含任务系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「任务系统」即可。</p>"
-    },
-    {
-      "id": "map-system-bundle",
-      "category": "Sale",
-      "coverName": "地图系统",
-      "title": "【限时折扣】地图系统 Unity+Godot 双版本捆绑",
-      "image": "Imgs/sale-pack.jpg",
-      "buyLink": "https://h5.m.goofish.com/item?id=1039730492669",
-      "note": "<p>本商品包含地图系统的 Unity 版 + Godot 版。</p><p>购买后获取解压密码，再从本页下方的 <b>Unity</b> 和 <b>Godot</b> 栏目获取「地图系统」即可。</p>"
+      "note": "<p><b>这是什么？</b></p><p>你可以从 Unity / Godot / UE 三个栏目中<b>自由挑选任意多件</b>项目，享受阶梯折扣：</p><ul><li>1 件：原价</li><li>2-4 件：<b>8 折</b></li><li>5 件及以上：<b>7 折</b></li></ul><p><b>怎么买？</b></p><ol><li>点击下方「获取」打开闲鱼专拍链接</li><li>私聊告诉我你想要哪几个，<b>直接说项目名就行</b></li><li>例如：「我要 对话系统Unity + 任务系统Godot + 背包系统UE」</li><li>我会按件数算好折扣价，改价后你直接拍</li></ol><p><b>注意：</b>自选包需要我手动改价，通常 1-2 小时内处理，最迟当天回复。着急的话建议直接购买单个自动发货商品。</p>"
     },
     {
       "id": "dialog-system",
@@ -124,7 +89,7 @@
       "category": "Unity",
       "coverName": "随机地牢生成",
       "title": "【Unity】随机地牢生成 以撒风格房间式+随机游走算法+迷雾小地图 导入即运行 注释详尽",
-      "image": "Imgs/dungeon-system.jpg",
+      "image": "Imgs/dungeon-system-v2.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1053441343534",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Dungeon_Unity\" target=\"_blank\">Gitee 仓库 - Dungeon_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>⚠️ Mac 用户：</b>macOS 自带的归档工具不支持 .7z 加密，双击会提示密码错误。请在 App Store 安装免费的 <b>The Unarchiver</b>，右键文件 → 打开方式 → The Unarchiver，输入密码即可正常解压。也可用 <a href=\"https://www.keka.io/\" target=\"_blank\">Keka</a> 或命令行 <code>brew install p7zip && 7za x 文件名.7z</code>。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><p>1. 打开你的 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_Dungeon.unitypackage</p><p>2. 导入后打开 Demo_Dungeon/Scenes/DemoScene_Dungeon 场景</p><p>3. 点击 Play 运行，WASD 移动角色，走到门口自动切换房间</p><p><b>自定义配置：</b>编辑 Resources/Config/dungeon_config.json，修改房间数量、尺寸、速度等参数，不用改任何代码。</p>"
     },
@@ -186,7 +151,7 @@
       "category": "Godot",
       "coverName": "随机地牢生成",
       "title": "【Godot】随机地牢生成 以撒风格房间式+随机游走算法+迷雾小地图 导入即运行 注释详尽",
-      "image": "Imgs/dungeon-system.jpg",
+      "image": "Imgs/dungeon-system-v2.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=1056116312344",
       "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Dungeon_Godot\" target=\"_blank\">Gitee 仓库 - Dungeon_Godot</a></p><p><b>解压说明：</b>下载 Dungeon_Godot.7z，右键 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>⚠️ Mac 用户：</b>macOS 自带的归档工具不支持 .7z 加密，双击会提示密码错误。请在 App Store 安装免费的 <b>The Unarchiver</b>，右键文件 → 打开方式 → The Unarchiver，输入密码即可正常解压。也可用 <a href=\"https://www.keka.io/\" target=\"_blank\">Keka</a> 或命令行 <code>brew install p7zip && 7za x 文件名.7z</code>。</p><p><b>环境要求：</b>Godot Engine 4.4+（官网免费下载，解压即用）。</p><p><b>使用步骤：</b></p><p>1. 打开 Godot → 导入 → 选择解压后文件夹中的 project.godot</p><p>2. 在文件系统中找到 Demo_Dungeon/Scenes/demo_scene_dungeon.tscn，双击打开</p><p>3. 按 F5 运行，WASD 移动角色，走到门口自动切换房间</p><p><b>自定义配置：</b>编辑 Resources/Config/dungeon_config.json，修改房间数量、尺寸、速度等参数，不用改任何代码。</p>"
     },
