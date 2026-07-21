@@ -162,7 +162,7 @@
       "title": "【UE5.8 蓝图+C++】分支对话系统 打字机+选项分支 插件化安装",
       "image": "Imgs/dialog-system-ue.jpg",
       "buyLink": "",
-      "note": "<p><b>交付形式：</b>独立 AstroDialog 插件，一个插件同时包含 Blueprint 和 Native C++ 两套逻辑，共用 UMG、贴图和音频。</p><p><b>环境要求：</b>Unreal Engine 5.8；使用 C++ 源码版需要 VS2022 C++ 编译环境。</p><p><b>使用步骤：</b></p><ol><li>将 AstroDialog 文件夹复制到目标工程的 Plugins 目录</li><li>编译并重启工程，打开 /AstroDialog/Demo/Maps/L_DialogDemo</li><li>选中 BP_DialogDemoController，在 Details &gt; Astro Dialog &gt; Implementation 选择 Blueprint 或 Native C++</li><li>点击运行，体验打字机、三选项分支、头像高亮和音效</li></ol><p><b>源码入口：</b>Blueprint 打开 BP_DialogManager；C++ 查看 AstroDialogManagerCpp.h/.cpp。</p>"
+      "note": "<p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/ue-demos/tree/master/DialogSystem_UE\" target=\"_blank\">Gitee 仓库 - DialogSystem_UE</a></p><p><b>解压说明：</b>下载全部 AstroDialog_UE5.8.7z.* 文件并放在同一目录，使用购买后获得的密码解压 AstroDialog_UE5.8.7z.001。Windows 可使用 7-Zip、Bandizip 或 WinRAR。</p><p><b>⚠️ Mac 用户：</b>macOS 自带的归档实用工具不支持加密 7z，可能会错误提示密码不正确。请使用 The Unarchiver、Keka，或安装 p7zip 后解压。</p><p><b>交付形式：</b>独立 AstroDialog 插件，一个插件同时包含 Blueprint 和 Native C++ 两套逻辑，共用 UMG、贴图和音频。</p><p><b>环境要求：</b>Unreal Engine 5.8；使用 C++ 源码版需要 VS2022 C++ 编译环境。</p><p><b>使用步骤：</b></p><ol><li>将 AstroDialog 文件夹复制到目标工程的 Plugins 目录</li><li>编译并重启工程，打开 /AstroDialog/Demo/Maps/L_DialogDemo</li><li>选中 BP_DialogDemoController，在 Details &gt; Astro Dialog &gt; Implementation 选择 Blueprint 或 Native C++</li><li>点击运行，体验打字机、三选项分支、头像高亮和音效</li></ol><p><b>源码入口：</b>Blueprint 打开 BP_DialogManager；C++ 查看 AstroDialogManagerCpp.h/.cpp。</p>"
     },
     {
       "id": "mass-demo",
