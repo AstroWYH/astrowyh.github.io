@@ -234,6 +234,15 @@
       "image": "Imgs/eve10.jpg",
       "buyLink": "https://h5.m.goofish.com/item?id=961624475342",
       "note": "<p>仓库地址：<a href=\"https://gitee.com/hanbabang/eve-gas-csharp\" target=\"_blank\">https://gitee.com/hanbabang/eve-gas-csharp</a></p><p>注：可直接vs2022打开sln运行。如果因为版本原因无法打开，则用户自己用vs2022创建C#控制台程序，将全部.cs文件拷贝后运行即可。</p>"
+    },
+    {
+      "id": "dialog-system-ue",
+      "category": "UE",
+      "coverName": "UE 分支对话系统",
+      "title": "【UE5.8 蓝图+C++】分支对话系统 打字机+选项分支 插件化安装",
+      "image": "Imgs/dialog-system-ue.jpg",
+      "buyLink": "",
+      "note": "<p><b>交付形式：</b>独立 AstroDialog 插件，一个插件同时包含 Blueprint 和 Native C++ 两套逻辑，共用 UMG、贴图和音频。</p><p><b>环境要求：</b>Unreal Engine 5.8；使用 C++ 源码版需要 VS2022 C++ 编译环境。</p><p><b>使用步骤：</b></p><ol><li>将 AstroDialog 文件夹复制到目标工程的 Plugins 目录</li><li>编译并重启工程，打开 /AstroDialog/Demo/Maps/L_DialogDemo</li><li>选中 BP_DialogDemoController，在 Details &gt; Astro Dialog &gt; Implementation 选择 Blueprint 或 Native C++</li><li>点击运行，体验打字机、三选项分支、头像高亮和音效</li></ol><p><b>源码入口：</b>Blueprint 打开 BP_DialogManager；C++ 查看 AstroDialogManagerCpp.h/.cpp。</p>"
     }
   ]
 }
