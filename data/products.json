@@ -59,6 +59,15 @@
       "note": "<p><b>这是什么？</b></p><p>你可以从 Unity / Godot / UE 三个栏目中<b>自由挑选任意多件</b>项目，享受阶梯折扣：</p><ul><li>1 件：原价</li><li>2-4 件：<b>8 折</b></li><li>5 件及以上：<b>7 折</b></li></ul><p><b>怎么买？</b></p><ol><li>点击下方「获取」打开闲鱼专拍链接</li><li>私聊告诉我你想要哪几个，<b>直接说项目名就行</b></li><li>例如：「我要 对话系统Unity + 任务系统Godot + 背包系统UE」</li><li>我会按件数算好折扣价，改价后你直接拍</li></ol><p><b>注意：</b>自选包需要我手动改价，通常 1-2 小时内处理，最迟当天回复。着急的话建议直接购买单个自动发货商品。</p>"
     },
     {
+      "id": "localization-system",
+      "category": "Unity",
+      "coverName": "本地化",
+      "title": "【Unity】本地化 中英日三语+运行时切换+JSON驱动 导入即运行 注释详尽",
+      "image": "Imgs/localization-system.jpg",
+      "buyLink": "",
+      "note": "<div class=\"guide-section guide-section--primary\"><h3>使用说明</h3><p><b>下载地址：</b><a href=\"https://gitee.com/hanbabang/demos-projects/tree/master/Localization_Unity\" target=\"_blank\">Gitee 仓库 - Localization_Unity</a></p><p><b>解压说明：</b>下载所有 .7z 文件到同一目录，右键 .7z.001 → 7-Zip → 解压，输入购买后获取的密码。</p><p><b>⚠️ Mac 用户：</b>macOS 自带的归档工具不支持 .7z 加密，双击会提示密码错误。请在 App Store 安装免费的 <b>The Unarchiver</b>，右键文件 → 打开方式 → The Unarchiver，输入密码即可正常解压。也可用 <a href=\"https://www.keka.io/\" target=\"_blank\">Keka</a> 或命令行 <code>brew install p7zip && 7za x 文件名.7z</code>。</p><p><b>环境要求：</b>Unity 2021.3 LTS 或更新版本（推荐 2022.3 LTS），任意渲染管线均可。</p><p><b>使用步骤：</b></p><ol><li>打开 Unity 项目 → Assets → Import Package → Custom Package → 选择解压出的 Demo_Localization.unitypackage</li><li>导入后打开 Demo_Localization/Scenes/DemoScene_Localization</li><li>点击 Play，点左侧 中文 / English / 日本語 切换语言</li><li>点「开始旅程」查看带玩家名的 Toast</li></ol><p><b>自定义文案：</b>编辑 Resources/Config/ 下的 loc_zh.json、loc_en.json、loc_ja.json。三份使用同一个 id，改 text 即可，不用改代码。</p></div><div class=\"guide-section guide-section--extra\"><h3>详细介绍与学习内容</h3><p>这是一个 Unity 本地化 Demo：中文、英语、日语三份 JSON 语言表，运行时一键切换，缺翻译回退中文。</p><img src=\"Imgs/localization-system-overview.jpg\" alt=\"Unity 本地化 Demo 运行画面\"><h3>功能与重点</h3><ul><li><b>运行时切语言：</b>不重载场景，标题、故事、物品、按钮一起刷新。</li><li><b>JSON 驱动：</b>文案和代码分离，加一句只要三份表补同一个 id。</li><li><b>Format 参数：</b>欢迎语「欢迎回来，{0}」可填玩家名。</li><li><b>缺 key 回退：</b>当前语言没有的句子自动用中文，再没有显示 [id]。</li><li><b>语言按钮写死母语：</b>中文 / English / 日本語 不参与翻译，避免切走后找不到回去的按钮。</li></ul><h3>工程结构</h3><ul><li><code>LocalizationManager</code>：加载表、Get / GetFormat、SetLanguage、记 PlayerPrefs。</li><li><code>LocText</code>：挂在 Text 上，语言变了自动刷新。</li><li><code>loc_zh.json / loc_en.json / loc_ja.json</code>：三份语言表。</li></ul><h3>你能从这个 Demo 学到什么</h3><ul><li>为什么游戏文案不能写死在 UI 上。</li><li>切语言时如何通知全界面刷新。</li><li>带参数的句子怎么配表。</li><li>正式项目可把 JSON 换成 Addressables，把系统字体换成 TextMeshPro。</li></ul><h3>适用场景</h3><p>适合要做出海、多语言菜单或设置里的语言选项的独立游戏和学习工程。它是可读可改的模块，不是 Unity Localization 包的黑盒封装。</p></div>"
+    },
+    {
       "id": "dialog-system",
       "category": "Unity",
       "title": "【Unity】对话系统 JSON驱动+分支选项+打字机效果 导入即运行 注释详尽",
