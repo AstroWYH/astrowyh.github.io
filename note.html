@@ -95,6 +95,18 @@
             border-radius: 6px;
             font-weight: bold;
         }
+        .purchase-notice {
+            margin: 8px 0;
+            padding: 26px 24px;
+            color: #26364a;
+            background: #f4f7fb;
+            border-left: 4px solid #d8a62b;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.75;
+            text-align: center;
+        }
         /* 全集包的关键跳转步骤：说明和操作并列，醒目但不打断阅读节奏。 */
         .home-return-step {
             margin: 16px 0;
@@ -195,6 +207,7 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const productId = urlParams.get('id');
+        const purchaseOnly = urlParams.get('purchase') === '1';
 
         if (!productId) {
             document.getElementById('page-title').textContent = '参数错误';
@@ -217,11 +230,20 @@
                     document.getElementById('page-title').textContent = item.title;
 
                     const img = document.getElementById('page-image');
+                    if (purchaseOnly && item.includedInBundle) {
+                        document.title = item.title + ' - 购买说明';
+                        document.getElementById('page-title').textContent = `${item.category} 本地化 Demo`;
+                        document.querySelector('.card-title').textContent = '购买说明';
+                        document.getElementById('note-content').innerHTML =
+                            `<div class="purchase-notice">本项目体量较小，不单独售卖，已作为 ${item.category} 全集包和全引擎全集包的附赠内容提供。</div>`;
+                        return;
+                    }
+
                     img.src = item.image;
                     img.style.display = 'block';
 
                     const accessTip = item.includedInBundle
-                        ? '提示：本模块体量较小，不单独售卖，作为对应引擎全集包和全引擎全集包的附赠内容提供'
+                        ? `提示：本项目体量较小，不单独售卖，已作为 ${item.category} 全集包和全引擎全集包的附赠内容提供`
                         : item.category === 'Collection'
                             ? '提示：购买全集包后，可获取包内各项目对应的解压密码'
                             : '提示：项目无法直接打开，需在店铺购买后，获取项目解压密码';
