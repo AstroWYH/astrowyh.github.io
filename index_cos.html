@@ -121,6 +121,31 @@
             transition: opacity 0.2s;
         }
 
+        /* 全集包买家操作提示：放在首页首屏，避免购买后找不到项目下载入口。 */
+        .bundle-guide {
+            max-width: 720px;
+            margin: 22px auto 0;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: #f8fafc;
+            background: #263c52;
+            border: 1px solid #d6a85f;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+        }
+        .bundle-guide strong {
+            color: #f5c978;
+            font-size: 1.05rem;
+            white-space: nowrap;
+        }
+        .bundle-guide span {
+            color: #e5edf5;
+            font-size: 0.95rem;
+        }
+
         /* ── Category Section ── */
         .content-wrap {
             max-width: 1140px;
@@ -304,6 +329,12 @@
             .hero h1 { font-size: 1.5rem; }
             .card-grid { grid-template-columns: 1fr; gap: 16px; }
             .content-wrap { padding: 10px 12px 40px; }
+            .bundle-guide {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 4px;
+                text-align: left;
+            }
         }
     </style>
 </head>
@@ -320,6 +351,10 @@
             <button class="search-clear" id="searchClear" title="清除">&times;</button>
         </div>
         <div class="stats" id="stats"></div>
+        <div class="bundle-guide" role="note" aria-label="全集包购买后操作说明">
+            <strong>已购买全集包？</strong>
+            <span>请在下方找到对应项目，点击“获取”查看下载地址和使用说明。</span>
+        </div>
     </div>
 
     <!-- Content -->

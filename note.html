@@ -94,6 +94,37 @@
             border-radius: 5px;
             font-weight: bold;
         }
+        /* 全集包说明中的关键跳转步骤：整块强调，并把返回首页做成主操作按钮。 */
+        .home-return-step {
+            margin: 18px 0;
+            padding: 18px;
+            list-style-position: inside;
+            background: #eaf2ff;
+            border: 2px solid #2f6fed;
+            border-radius: 8px;
+            color: #1f3658;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        .home-return-step a {
+            display: block;
+            margin: 0 0 10px;
+            padding: 14px 18px;
+            color: #ffffff;
+            background: #2f6fed;
+            border-radius: 6px;
+            font-size: 22px;
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 5px 14px rgba(47, 111, 237, 0.25);
+        }
+        .home-return-step a:hover {
+            color: #ffffff;
+            background: #1e56bd;
+            text-decoration: none;
+        }
         .error-text {
             text-align: center;
             color: #dc3545;
@@ -149,12 +180,19 @@
                     img.src = item.image;
                     img.style.display = 'block';
 
-                    const accessTip = item.buyLabel === '全集包'
-                        ? '提示：本项目不单独销售，购买对应引擎全集包或全引擎全集包后获取解压密码'
+                    const accessTip = item.includedInBundle
+                        ? '提示：本模块体量较小，不单独售卖，作为对应引擎全集包和全引擎全集包的附赠内容提供'
                         : '提示：项目无法直接打开，需在店铺购买后，获取项目解压密码';
                     let noteHtml = `<p class="warning-box">${accessTip}</p>`;
                     noteHtml += item.note || '<p>暂无使用说明。</p>';
                     document.getElementById('note-content').innerHTML = noteHtml;
+
+                    // 几个全集包都使用相同的返回首页链接，统一把所在步骤升级为醒目操作区。
+                    document.querySelectorAll('#note-content a[href="./"]').forEach(link => {
+                        if (link.textContent.includes('返回首页')) {
+                            link.closest('li')?.classList.add('home-return-step');
+                        }
+                    });
                 })
                 .catch(err => {
                     console.error('加载数据失败:', err);
