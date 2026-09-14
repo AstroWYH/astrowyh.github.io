@@ -149,7 +149,10 @@
                     img.src = item.image;
                     img.style.display = 'block';
 
-                    let noteHtml = '<p class="warning-box">提示：项目无法直接打开，需在店铺购买后，获取项目解压密码</p>';
+                    const accessTip = item.buyLabel === '全集包'
+                        ? '提示：本项目不单独销售，购买对应引擎全集包或全引擎全集包后获取解压密码'
+                        : '提示：项目无法直接打开，需在店铺购买后，获取项目解压密码';
+                    let noteHtml = `<p class="warning-box">${accessTip}</p>`;
                     noteHtml += item.note || '<p>暂无使用说明。</p>';
                     document.getElementById('note-content').innerHTML = noteHtml;
                 })
