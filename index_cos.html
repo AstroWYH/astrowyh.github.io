@@ -220,6 +220,19 @@
         .p-card-tag.unity      { background: rgba(76,175,80,0.15);  color: var(--accent-unity); }
         .p-card-tag.godot      { background: rgba(71,140,191,0.15); color: var(--accent-godot); }
         .p-card-tag.ue         { background: rgba(33,150,243,0.15); color: var(--accent-ue); }
+        .p-card-promo {
+            margin-bottom: 12px;
+            padding: 9px 10px;
+            border: 1px solid rgba(255,193,7,0.32);
+            border-left: 3px solid var(--accent-collection);
+            border-radius: 6px;
+            background: rgba(255,193,7,0.1);
+            color: #ffda6a;
+            font-size: 0.85rem;
+            font-weight: 700;
+            line-height: 1.7;
+        }
+        .p-card-promo span { display: inline-block; }
         .p-card-title {
             font-size: 0.95rem;
             font-weight: 600;
@@ -397,6 +410,7 @@
                     </div>
                     <div class="p-card-body">
                         <span class="p-card-tag ${cat.css}">${cat.label}</span>
+                        ${cat.key === 'Collection' ? '<div class="p-card-promo"><span>限时特价，</span><span>永久免费更新，</span><span>性价比之选！</span></div>' : ''}
                         <div class="p-card-title">${p.title}</div>
                         <div class="p-card-btns">
                             ${buyBtn}
