@@ -232,7 +232,7 @@
                     const img = document.getElementById('page-image');
                     if (purchaseOnly && item.includedInBundle) {
                         document.title = item.title + ' - 购买说明';
-                        document.getElementById('page-title').textContent = `${item.category} 本地化 Demo`;
+                        document.getElementById('page-title').textContent = item.title;
                         document.querySelector('.card-title').textContent = '购买说明';
                         document.getElementById('note-content').innerHTML =
                             `<div class="purchase-notice">本项目体量较小，不单独售卖，已作为 ${item.category} 全集包和全引擎全集包的附赠内容提供。</div>`;
