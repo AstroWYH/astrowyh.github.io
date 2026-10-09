@@ -318,6 +318,7 @@
             .card-grid { grid-template-columns: 1fr; gap: 16px; }
             .content-wrap { padding: 10px 12px 40px; }
         }
+        .purchase-hint { color: #b8c5d6; font-size: 13px; line-height: 1.65; margin: 0 0 12px; }
     </style>
 </head>
 <body>
@@ -412,6 +413,7 @@
                         <span class="p-card-tag ${cat.css}">${cat.label}</span>
                         ${cat.key === 'Collection' ? '<div class="p-card-promo"><span>限时特价，</span><span>永久免费更新，</span><span>性价比之选！</span></div>' : ''}
                         <div class="p-card-title">${p.title}</div>
+                        ${p.buyHint ? `<p class="purchase-hint">${p.buyHint}</p>` : ''}
                         <div class="p-card-btns">
                             ${buyBtn}
                             <a href="note.html?id=${p.id}" class="btn-note" target="_blank">获取</a>

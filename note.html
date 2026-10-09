@@ -249,6 +249,7 @@
                             ? '提示：购买全集包后，可获取包内各项目对应的解压密码'
                             : '提示：项目无法直接打开，需在店铺购买后，获取项目解压密码';
                     let noteHtml = `<p class="warning-box">${accessTip}</p>`;
+                    if (item.buyHint) noteHtml += `<p class="purchase-notice">${item.buyHint} <a href="${item.buyLink}" target="_blank" rel="noopener">前往闲鱼选购</a></p>`;
                     noteHtml += item.note || '<p>暂无使用说明。</p>';
                     document.getElementById('note-content').innerHTML = noteHtml;
 
