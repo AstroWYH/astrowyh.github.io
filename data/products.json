@@ -359,10 +359,10 @@
       "id": "minimap",
       "category": "UE",
       "title": "【UE 5.8】交互式小地图 蓝图+C++双实现 独立插件 玩家追踪 缩放与拖动",
-      "image": "Imgs/minimap-cover-v2.png",
+      "image": "Imgs/minimap-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=954762363040",
       "note": "<div class=\"guide-section guide-section--primary\"><h3>使用说明</h3><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/ue/MapSystem_UE/f4d713e0d2dbb9fda9d148bbad8b269ed90789abb4dbb9f5d42631f69ec2c2a6/AstroMap_UE5.8_v2.0.0.7z\">下载新版插件（加密包，原密码不变）</a> · <a href=\"https://gitee.com/hanbabang/eve-map\">Gitee 下载仓库</a></p><ul><li>环境：Windows / Unreal Engine 5.8。使用原购买密码，通过 7-Zip 解压；macOS 可用 Keka 解压，但本包未验证 Mac 编译运行。</li><li>将 AstroMap 文件夹放到自己工程的 Plugins 目录，重启编辑器；内容浏览器开启“显示插件内容”。</li><li>打开 /AstroMap/Demo/L_MapDemo，点击 Play。WASD 移动，M 切换大小地图，滚轮缩放，按住左键拖动，R 重置。</li><li>默认运行 Blueprint。停止 Play 后，选中关卡中的 AstroMapDemo，在 Implementation 中选择 Native C++ 或 Blueprint，再次运行即可对照。</li><li>调整 Bounds、MapTexture、TrackedActor 与 Points，即可接入自己的地图范围、底图、角色与地标。</li></ul></div><div class=\"guide-section guide-section--extra\"><h3>一个插件，理解交互地图的完整流程</h3><ul><li>在黑白青紫的简洁场景中移动机器人，右上角同步显示玩家位置与朝向；按 M 展开区域地图，查看三个地标。</li><li>C++ 与蓝图分别实现地图核心逻辑，共用场景、人物、材质及界面。蓝图有九个函数图与中文说明，可以逐步对照源码学习。</li></ul><figure><img src=\"Imgs/minimap-v2-scene.png\" alt=\"场景实机：机器人移动与右上角小地图，玩家位置和方向同步。\" style=\"max-width:100%;height:auto\" loading=\"lazy\"><figcaption>场景实机：机器人移动与右上角小地图，玩家位置和方向同步。</figcaption></figure><figure><img src=\"Imgs/minimap-v2-map.png\" alt=\"区域地图实机：地标、玩家方向、缩放与拖动共用同一套地图逻辑。\" style=\"max-width:100%;height:auto\" loading=\"lazy\"><figcaption>区域地图实机：地标、玩家方向、缩放与拖动共用同一套地图逻辑。</figcaption></figure><h3>功能与实现重点</h3><ul><li>世界坐标与地图 UV 双向转换：支持地图中心偏移、范围配置和北向旋转。</li><li>鼠标锚点缩放：围绕鼠标所在位置放大，倍率限制在 1～4 倍。</li><li>拖动与边界限制：只允许平移放大后超出的区域；重置后恢复完整视野。</li><li>玩家与地标标记：地图缩放时标记保持可读尺寸，玩家方向随角色转向更新。</li><li>静态底图与动态标记分开：示例场景采集一次底图，后续更新玩家标记，无需每帧重拍整个场景。</li></ul><h3>源码与蓝图阅读入口</h3><ul><li>AstroMapProjection：坐标转换、锚点补偿与边界数学。AstroMapLogicCpp：C++ 状态与操作流程。</li><li>Content/Blueprint/BP_MapLogic：独立蓝图算法；AstroMapLogic.h：两套实现共用的数据契约。</li><li>AstroMapWidget：共用地图绘制、输入和标记；AstroMapDemo：示例场景、机器人与底图采集。</li></ul><h3>适用范围与扩展</h3><ul><li>适合学习交互地图、世界与 UI 坐标转换，以及 C++ / 蓝图双实现。可继续加入任务标记、传送点或地图点击交互。</li><li>交付为独立插件，含源码、蓝图、示例关卡和 Win64 编辑器 DLL；场景与界面底层共用 C++，不是完全不依赖 C++ 的纯蓝图插件。</li><li>本示例不包含寻路、战争迷雾或联网同步。地图模块不依赖其他 Demo 插件，不修改宿主默认 GameMode 或输入配置。</li></ul></div>",
-      "cover": "Imgs/minimap-cover-v2.png"
+      "cover": "Imgs/minimap-cover-v3.png"
     },
     {
       "id": "gas-system",
