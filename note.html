@@ -252,6 +252,7 @@
                     if (item.buyHint) noteHtml += `<p class="purchase-notice">${item.buyHint} <a href="${item.buyLink}" target="_blank" rel="noopener">前往闲鱼选购</a></p>`;
                     noteHtml += item.note || '<p>暂无使用说明。</p>';
                     document.getElementById('note-content').innerHTML = noteHtml;
+                    setupDemoVideos();
 
                 })
                 .catch(err => {
@@ -260,6 +261,35 @@
                     document.getElementById('note-content').innerHTML =
                         '<p class="error-text">加载数据失败，请刷新重试。</p>';
                 });
+        }
+        function setupDemoVideos() {
+            const videos = [...document.querySelectorAll('video.demo-video')];
+            const states = new Map(videos.map(video => [video, { visible: false, manual: false, autoPause: false }]));
+            function sync(video) {
+                const state = states.get(video);
+                if (!state.visible || document.hidden) {
+                    if (!video.paused) { state.autoPause = true; video.pause(); }
+                } else if (!state.manual && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    video.play().catch(() => {});
+                }
+            }
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    states.get(entry.target).visible = entry.isIntersecting;
+                    sync(entry.target);
+                });
+            }, { threshold: 0.2 });
+            videos.forEach(video => {
+                video.muted = true;
+                video.addEventListener('pause', () => {
+                    const state = states.get(video);
+                    if (state.autoPause) state.autoPause = false;
+                    else state.manual = true;
+                });
+                video.addEventListener('play', () => { states.get(video).manual = false; });
+                observer.observe(video);
+            });
+            document.addEventListener('visibilitychange', () => videos.forEach(sync));
         }
     </script>
 </body>
