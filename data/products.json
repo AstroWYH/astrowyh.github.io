@@ -70,129 +70,129 @@
       "category": "Unity",
       "coverName": "ECS甲虫群",
       "title": "【Unity 2022.3】ECS 甲虫群",
-      "image": "Imgs/unity-ecs-swarm-cover-v2.png",
+      "image": "Imgs/unity-ecs-swarm-cover-v3.png",
       "buyLink": "note.html?id=ecs-swarm&purchase=1",
       "includedInBundle": true,
       "buyLabel": "全集包赠送",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/ECSSwarm_Unity/a5fe3dcd19d92d10acb31d61aa61c84ccc017bd78a3b5bc22c47088fca166cd2/ECSSwarm_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_ECSSwarm/Scenes/DemoScene_ECSSwarm.unity，点击 Play；不需要运行制作工具。</li><li>选择 100／500／2000／5000 只，切换环绕／聚集，暂停或重新分散。点击地面改变目标，滚轮缩放。</li><li>需要额外安装 Entities Graphics 1.2.4（自动带入 Entities、Burst、Collections），并使用 Linear 色彩空间及兼容的 URP Renderer。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 批量移动、实例渲染、数量切换 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/SwarmComponents.cs、SwarmMovementSystem.cs、SwarmDemoController.cs。</li><li>Entity 数据、Burst IJobEntity 批量移动、Entities Graphics 实例绘制；显示 FPS 是整帧指标。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_ECSSwarm/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>这是批量移动与渲染示例，不包含导航或群体避障；HUD FPS 是整帧指标，5000 只不代表所有设备的性能保证。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-ecs-swarm-refactor-v2-1.png\" alt=\"ECS 甲虫群：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>ECS 甲虫群：实际运行界面</figcaption></figure></div>",
-      "cover": "Imgs/unity-ecs-swarm-cover-v2.png"
+      "cover": "Imgs/unity-ecs-swarm-cover-v3.png"
     },
     {
       "id": "achievement-system",
       "category": "Unity",
       "coverName": "成就系统",
       "title": "【Unity 2022.3】成就系统",
-      "image": "Imgs/unity-achievement-system-cover-v2.png",
+      "image": "Imgs/unity-achievement-system-cover-v3.png",
       "buyLink": "note.html?id=achievement-system&purchase=1",
       "includedInBundle": true,
       "buyLabel": "全集包赠送",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/AchievementSystem_Unity/26feeb3f3e914fefb568aba0fbbbd74d1be4e6e0469ae6752943152f255fb33c/AchievementSystem_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_AchievementSystem/Scenes/DemoScene_Achievement.unity，点击 Play；不需要运行制作工具。</li><li>点击左侧按钮模拟战斗、收集、探索和单次伤害；右侧按分类查看目标、进度与积分。</li><li>支持全部、未完成、已达成筛选。进度自动保存和恢复；重置有二次确认。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 事件统计、分类筛选、自动保存 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/Core/AchievementService.cs、Scripts/AchievementDemoController.cs、Scripts/UI/AchievementCard.cs。</li><li>首次、累计、最高值三种规则；解锁只通知一次，读档不重放解锁奖励。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_AchievementSystem/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>用于学习和接入本地业务模块；按自己的项目需求扩展数据、界面与持久化。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-achievement-system-refactor-v2-1.png\" alt=\"成就系统：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>成就系统：实际运行界面</figcaption></figure><figure><img src=\"Imgs/unity-achievement-system-refactor-v2-2.png\" alt=\"成就系统：功能与状态展示\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>成就系统：功能与状态展示</figcaption></figure></div>",
-      "cover": "Imgs/unity-achievement-system-cover-v2.png"
+      "cover": "Imgs/unity-achievement-system-cover-v3.png"
     },
     {
       "id": "red-dot",
       "category": "Unity",
       "coverName": "红点系统",
       "title": "【Unity 2022.3】红点系统",
-      "image": "Imgs/unity-red-dot-cover-v2.png",
+      "image": "Imgs/unity-red-dot-cover-v3.png",
       "buyLink": "note.html?id=red-dot&purchase=1",
       "includedInBundle": true,
       "buyLabel": "全集包赠送",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/RedDot_Unity/416857fca709544bfd3c49c5f89f572af78d118b91f94e93ab9604a32d221529/RedDot_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_RedDot/Scenes/DemoScene_RedDot.unity，点击 Play；不需要运行制作工具。</li><li>切换消息、背包等页面，新增或处理消息，观察子节点与父入口计数同步。</li><li>支持红点／数字显示、清空与重置；99+ 只影响显示，不截断实际计数。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 层级汇总、事件通知、状态联动 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/Core/RedDotService.cs、Scripts/UI/RedDotDemoController.cs。</li><li>叶子状态变化向父节点汇总；界面隐藏/恢复后同步，显示 99+ 不改变真实计数。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_RedDot/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>用于学习和接入本地业务模块；按自己的项目需求扩展数据、界面与持久化。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-red-dot-refactor-v2-1.png\" alt=\"红点系统：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>红点系统：实际运行界面</figcaption></figure><figure><img src=\"Imgs/unity-red-dot-refactor-v2-2.png\" alt=\"红点系统：功能与状态展示\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>红点系统：功能与状态展示</figcaption></figure></div>",
-      "cover": "Imgs/unity-red-dot-cover-v2.png"
+      "cover": "Imgs/unity-red-dot-cover-v3.png"
     },
     {
       "id": "save-system",
       "category": "Unity",
       "coverName": "存档与读档",
       "title": "【Unity 2022.3】存档与读档",
-      "image": "Imgs/unity-save-system-cover-v2.png",
+      "image": "Imgs/unity-save-system-cover-v3.png",
       "buyLink": "note.html?id=save-system&purchase=1",
       "includedInBundle": true,
       "buyLabel": "全集包赠送",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/SaveSystem_Unity/58529aa4763c272f8fea8566a09ca1f6737962c1dddcbf0676a13808610327c0/SaveSystem_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_SaveSystem/Scenes/DemoScene_SaveSystem.unity，点击 Play；不需要运行制作工具。</li><li>先修改金币、等级或章节，再保存到三个固定位置；读取后观察角色状态恢复。</li><li>空位置仅提供保存，有记录后提供覆盖、读取、删除；破坏性操作需要确认。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 多存档位、进度恢复、删除确认 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/Logic/SaveService.cs、Scripts/UI/SaveDemoController.cs。</li><li>内存状态和磁盘快照分离；临时文件/备份保护写入，坏档和版本错误返回明确结果。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_SaveSystem/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>本地 JSON 存档示例，不提供云存档或防作弊；示例数据与自己的业务数据结构分离。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-save-system-refactor-v2-1.png\" alt=\"存档与读档：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>存档与读档：实际运行界面</figcaption></figure></div>",
-      "cover": "Imgs/unity-save-system-cover-v2.png"
+      "cover": "Imgs/unity-save-system-cover-v3.png"
     },
     {
       "id": "localization-system",
       "category": "Unity",
       "coverName": "本地化",
       "title": "【Unity 2022.3】本地化系统",
-      "image": "Imgs/unity-localization-system-cover-v2.png",
+      "image": "Imgs/unity-localization-system-cover-v3.png",
       "buyLink": "note.html?id=localization-system&purchase=1",
       "includedInBundle": true,
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/Localization_Unity/ce1a81f2dfaa4a06171458bd3dfbfe74938e436ae6e16c870b774f5cf2f0e93f/Localization_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_Localization/Scenes/DemoScene_Localization.unity，点击 Play；不需要运行制作工具。</li><li>点击中文、English、日本語切换；整页文字和带参数的欢迎语同步更新。</li><li>修改 Resources/Config/loc_*.json 添加文本；通过 LocalizedText 绑定稳定文本键。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 多语言切换、文本绑定、动态格式 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/Logic/LocalizationManager.cs、Scripts/UI/LocalizedText.cs、Scripts/UI/LocalizationUIController.cs。</li><li>稳定文本键、中文回退、格式化参数、语言变更事件和随包字体。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_Localization/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>用于学习和接入本地业务模块；按自己的项目需求扩展数据、界面与持久化。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-localization-system-refactor-v2-1.png\" alt=\"本地化系统：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>本地化系统：实际运行界面</figcaption></figure><figure><img src=\"Imgs/unity-localization-system-refactor-v2-2.png\" alt=\"本地化系统：功能与状态展示\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>本地化系统：功能与状态展示</figcaption></figure></div>",
       "buyLabel": "全集包赠送",
-      "cover": "Imgs/unity-localization-system-cover-v2.png"
+      "cover": "Imgs/unity-localization-system-cover-v3.png"
     },
     {
       "id": "dialog-system",
       "category": "Unity",
       "title": "对话系统",
-      "image": "Imgs/unity-dialogue-cover-v1.png",
+      "image": "Imgs/unity-dialog-system-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1030781696181",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/DialogSystem_Unity/5f2b5c0d43ed001896652a7ef9e8a46e6d31c13c880d7a5d6b51a3fadaaa20ec/DialogSystem_Unity_UIAssets_v2.1.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip 解压；macOS 可使用 Keka。导入包内 .unitypackage，推荐 Unity 2022.3.62f2。</li><li>打开 Assets/Demo_DialogSystem/Scenes/DemoScene_Dialog.unity，点击 Play。需要 Unity UI 包；Active Input Handling 使用 Input Manager 或 Both。</li><li>点击对话框或按空格继续；打字时先补全当前句。鼠标或数字 1–3 选择分支，先申请权限才能进入信号塔。</li><li>结束后停留，只有 R 重新开始；鼠标可自由移出窗口。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 可编辑 Prefab、逐字对话、分支选择、条件解锁与事件通知</p><h3>功能与实现</h3><ul><li>剧情节点、跳转、条件和事件键保存在 Data/RelayDialogue.json；通过 TextAsset 引用，不依赖 Resources 路径。</li><li>DialogueSession 负责会话与条件，DialogueView 负责文本、头像和选项；事件用于接入任务或演出。</li><li>经典姓名牌、双头像与对话框；逐字显示、授权解锁、结束停留构成完整示例。</li></ul><h3>界面与美术编辑</h3><ul><li>Prefabs/RelayDialogue.prefab 保存完整 UI 层级，可在编辑器调整布局、按钮和文字。</li><li>图片、图标和字体位于 Art；通过 Image/Sprite 引用资源，运行时不绘制头像或背景。</li><li>接入自己的场景时拖入 RelayDialogue.prefab，并保留一个 EventSystem + StandaloneInputModule；不要叠放多个全屏示例。</li></ul><h3>源码与交付范围</h3><ul><li>模块入口 Assets/Demo_DialogSystem；Runtime 保存业务与界面代码，Docs/README.md 提供数据字段、接入说明和阅读顺序。</li><li>示例独立于其他 Demo；编辑器生成工具不属于运行时依赖。字体及许可证随包提供。</li><li>这是本地功能教学示例，不包含服务器、真实支付或存档。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-dialogue-sprites-1080.png\" alt=\"实际运行画面：经典对话框、角色头像与逐字台词。\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>实际运行画面：经典对话框、角色头像与逐字台词。</figcaption></figure></div>",
-      "cover": "Imgs/unity-dialogue-cover-v1.png"
+      "cover": "Imgs/unity-dialog-system-cover-v3.png"
     },
     {
       "id": "shop-system",
       "category": "Unity",
       "coverName": "商店&背包系统",
       "title": "商店&背包系统",
-      "image": "Imgs/unity-shop-cover-v1.png",
+      "image": "Imgs/unity-shop-system-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1031790796147",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/ShopSystem_Unity/3cd1fa2e8030ae84da216c41ac0c877cdfcf2586177ba66463d3a6411a7f35f6/ShopSystem_Unity_UIAssets_v2.1.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip 解压；macOS 可使用 Keka。导入包内 .unitypackage，推荐 Unity 2022.3.62f2。</li><li>打开 Assets/Demo_ShopSystem/Scenes/DemoScene_Shop.unity，点击 Play。需要 Unity UI 包；Active Input Handling 使用 Input Manager 或 Both。</li><li>左侧选商品购买，右侧选背包物品出售；+/- 调整数量，两侧可分别筛选类别。</li><li>拖动背包格交换或移入空格，整理合并堆叠并排序；R 恢复初始状态，交易提示显示在顶部。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 可编辑 Prefab、购买出售、数量选择、堆叠、分类与拖动整理</p><h3>功能与实现</h3><ul><li>12 格背包，支持有限与无限库存、数量交易、分类筛选、物品堆叠、拖放交换和整理。</li><li>交易先检查金币、库存与容量，再一次性修改数据；容量不足不扣款，整理前后物品数量守恒。</li><li>ShopSession 管理业务，ShopView / ShopSlotView 负责显示与输入；Data/Items.json 和 Shop.json 保存商品与商店配置。</li></ul><h3>界面与美术编辑</h3><ul><li>Prefabs/TravelShop.prefab 保存完整 UI 层级，可在编辑器调整布局、按钮和文字。</li><li>图片、图标和字体位于 Art；通过 Image/Sprite 引用资源，运行时不绘制头像或背景。</li><li>接入自己的场景时拖入 TravelShop.prefab，并保留一个 EventSystem + StandaloneInputModule；不要叠放多个全屏示例。</li></ul><h3>源码与交付范围</h3><ul><li>模块入口 Assets/Demo_ShopSystem；Runtime 保存业务与界面代码，Docs/README.md 提供数据字段、接入说明和阅读顺序。</li><li>示例独立于其他 Demo；编辑器生成工具不属于运行时依赖。字体及许可证随包提供。</li><li>这是本地功能教学示例，不包含服务器、真实支付或存档。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-shop-1080.png\" alt=\"实际运行画面：商店、背包、分类与交易详情。\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>实际运行画面：商店、背包、分类与交易详情。</figcaption></figure></div>",
-      "cover": "Imgs/unity-shop-cover-v1.png"
+      "cover": "Imgs/unity-shop-system-cover-v3.png"
     },
     {
       "id": "quest-system",
       "category": "Unity",
       "coverName": "任务系统",
       "title": "【Unity 2022.3】任务系统",
-      "image": "Imgs/unity-quest-cover-v1.png",
+      "image": "Imgs/unity-quest-system-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1033011341605",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/QuestSystem_Unity/166d295fc1e7cb8b426e2f7024c53ecf40a9d433991f4b49577609ed9589c9ec/QuestSystem_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip 解压；macOS 可使用 Keka。导入包内 QuestSystem.unitypackage。</li><li>使用 Unity 2022.3.62f2 的 3D (URP) 工程，依赖 URP 14.0.12 与 Unity UI；Active Input Handling 使用 Input Manager 或 Both。</li><li>打开 Assets/Demo_QuestSystem/Scenes/DemoScene_Quest.unity，点击 Play。WASD 移动，E 与附近 NPC 交谈，右侧接取任务与领奖；R 重置。</li><li>接取初访营地，与站长交谈并领奖后解锁研究任务；研究区收集三个紫色样本，维修区收集四个青色零件，并分别与 NPC 交谈。</li><li>已安装旧版本时，先备份自己的改动并移走旧 Demo_QuestSystem 文件夹，再导入。不要混用旧场景和旧脚本。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 3D 营地、可编辑 Prefab、前置解锁、交谈采集与任务奖励</p><h3>功能与实现</h3><ul><li>五种任务状态：未解锁、可接取、进行中、待领奖、已领取；完成目标后单独领奖，解锁后续任务。</li><li>JSON 配置任务与目标，事件同时匹配类型和目标 ID；支持并行任务、多目标完成、进度封顶与一次性奖励。</li><li>采集物分散在研究区和维修区，接取后靠近自动收集；未接取任务时不消耗物品。</li><li>3D 机器人、营地建筑、分区道路与采集物；平面移动、建筑碰撞、NPC 姓名牌和交互提示，鼠标可自由移出窗口。</li></ul><h3>可编辑资产与源码</h3><ul><li>Prefabs/QuestCamp.prefab 保存场景、机器人和采集物，QuestHUD.prefab 保存任务卡和按钮，可在编辑器中修改。</li><li>CampQuestSession 处理纯 C# 业务；CampQuestWorld 连接场景事件；CampQuestView / CampQuestRow 更新 UI，不运行时拼装美术。</li><li>Data/CampQuests.json 保存任务定义；Docs/README.md 包含操作、字段、接入、扩展步骤和源码阅读顺序，关键流程附中文注释。</li></ul><h3>学习与扩展</h3><ul><li>理解任务定义与运行状态分离、世界事件上报、前置解锁、幂等领奖，以及通过事件通知 UI。</li><li>可扩展击杀、探索等目标：新增事件类型与目标配置，再由自己的玩法模块上报。示例固定三条任务卡，增加任务时同步扩展 Prefab 条目。</li><li>字体及 OFL 许可证随模块提供；当前是本地教学示例，不包含存档、联网、NavMesh 或战斗系统。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-quest-camp-1080.png\" alt=\"任务营地实机：三个 NPC、研究样本与维修零件分区分布，右侧显示任务状态和奖励。\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>任务营地实机：三个 NPC、研究样本与维修零件分区分布，右侧显示任务状态和奖励。</figcaption></figure></div>",
-      "cover": "Imgs/unity-quest-cover-v1.png"
+      "cover": "Imgs/unity-quest-system-cover-v3.png"
     },
     {
       "id": "map-system",
       "category": "Unity",
       "coverName": "地图系统",
       "title": "【Unity 2022.3】M 图与小地图",
-      "image": "Imgs/unity-map-system-cover-v2.png",
+      "image": "Imgs/unity-map-system-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1037232907240",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/MapSystem_Unity/51c65837cab5ee6b2aa38ea07cb86eeb0d9fc1747df3917bf2c3310e345c642f/MapSystem_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_MapSystem/Scenes/DemoScene_MapSystem.unity，点击 Play；不需要运行制作工具。</li><li>WASD 移动；M 或按钮打开区域地图。滚轮围绕鼠标缩放，左键拖动，重置视图恢复全图。</li><li>倍率 1～4 倍，拖动自动限位；标记大小保持可读。打开区域地图时暂停玩家移动。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 玩家追踪、锚点缩放、拖动限位 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>CampMapProjection：把世界 XZ 坐标映射到地图 UV，再转换成 UI 位置。</li><li>CampMapViewport：两张地图共用坐标与标记逻辑；区域地图支持锚点缩放、边界限制与拖动。</li><li>CampMapDemo：绑定玩家移动、地图开关和重置；底图为静态 PNG，动态标记独立更新。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_MapSystem/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>静态地图底图不会自动反映建筑变化；动态目标通过独立标记更新，不含寻路或传送。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-map-system-refactor-v2-1.png\" alt=\"M 图与小地图：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>M 图与小地图：实际运行界面</figcaption></figure><figure><img src=\"Imgs/unity-map-system-refactor-v2-2.png\" alt=\"M 图与小地图：功能与状态展示\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>M 图与小地图：功能与状态展示</figcaption></figure></div>",
-      "cover": "Imgs/unity-map-system-cover-v2.png"
+      "cover": "Imgs/unity-map-system-cover-v3.png"
     },
     {
       "id": "card-battle",
       "category": "Unity",
       "coverName": "卡牌对战",
       "title": "【Unity 2022.3】卡牌战斗",
-      "image": "Imgs/unity-card-battle-cover-v2.png",
+      "image": "Imgs/unity-card-battle-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1052433658151",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/CardBattle_Unity/432c55940fc3e126580bc7c2caac760d9065c14bab2675ccbf5c6c9931630240/CardBattle_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_CardBattle/Scenes/DemoScene_CardBattle.unity，点击 Play；不需要运行制作工具。</li><li>鼠标悬停抬起卡牌，点击消耗能量出牌；结束回合后对手执行头像上方预告的行动。</li><li>能量不足的卡仍可悬停查看，并明确显示“能量不足”。重新开始恢复牌堆、生命与能量。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 扇形手牌、回合状态、能量消耗 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Runtime/CampCardView.cs → Scripts/Logic/BattleManager.cs → DeckManager.cs / EnemyAI.cs。</li><li>手牌/抽牌堆/弃牌堆、能量约束、攻击/护甲/治疗、回合状态机；重开取消旧敌人协程。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_CardBattle/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>单机回合制教学示例，不含联网、完整卡组编辑或商业关卡内容。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-card-battle-refactor-v2-1.png\" alt=\"卡牌战斗：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>卡牌战斗：实际运行界面</figcaption></figure></div>",
-      "cover": "Imgs/unity-card-battle-cover-v2.png"
+      "cover": "Imgs/unity-card-battle-cover-v3.png"
     },
     {
       "id": "dungeon-system",
       "category": "Unity",
       "coverName": "随机地牢生成",
       "title": "【Unity 2022.3】随机地牢",
-      "image": "Imgs/unity-dungeon-system-cover-v2.png",
+      "image": "Imgs/unity-dungeon-system-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1053441343534",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/Dungeon_Unity/bc14c8d7b63f9bd0f7c4d1aae19954446df53a7075b87ec76f79860b0e5c8780/Dungeon_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_Dungeon/Scenes/DemoScene_Dungeon.unity，点击 Play；不需要运行制作工具。</li><li>WASD 移动，走到发光门口进入相邻房间；R 或“新地牢”按钮重新生成。</li><li>点击“查看全图”或按 Tab 切换探索地图／全图；起、宝、店、B 分别表示起始、宝箱、商店与 Boss 房，全图不会增加探索计数。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 随机生成、特殊房间、探索迷雾 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/Logic/DungeonGenerator.cs → Scripts/Data/DungeonData.cs → Runtime/CampDungeonView.cs。</li><li>随机游走生成相连房间、双向门、特殊房分配、探索可见性；同一个正式房间资产展示当前节点。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_Dungeon/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>这是拓扑生成与探索示例。宝箱、商店和 Boss 是房间类型与场景展示，不包含开箱奖励、商品交易或 Boss 战斗。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-dungeon-system-refactor-v2-1.png\" alt=\"随机地牢：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>随机地牢：实际运行界面</figcaption></figure></div>",
-      "cover": "Imgs/unity-dungeon-system-cover-v2.png"
+      "cover": "Imgs/unity-dungeon-system-cover-v3.png"
     },
     {
       "id": "urp-outline-pack",
       "category": "Unity",
       "coverName": "URP 描边&高亮",
       "title": "【Unity 2022.3】描边与高亮",
-      "image": "Imgs/unity-urp-outline-pack-cover-v2.png",
+      "image": "Imgs/unity-urp-outline-pack-cover-v3.png",
       "buyLink": "https://h5.m.goofish.com/item?id=1052124656398",
       "note": "<div class=\"guide-section guide-section--primary\"><p><a href=\"https://hanbabang-1311741789.cos.ap-chengdu.myqcloud.com/demo-downloads/unity/UrpOutlinePack_Unity/9b1988cf9a2b3e508488435e03f7e6ed5d5bbcd099289e7044d064853cddaee8/UrpOutlinePack_Unity2022.3_v2.0.0.7z\">下载Unity 工程包</a></p><h3>使用说明</h3><ul><li>使用购买后获取的密码，通过 7-Zip、Bandizip 等工具解压；macOS 请使用 Keka 或 The Unarchiver。</li><li>推荐 Unity 2022.3.62f2，安装 Unity UI 1.0.0 与 URP 14.0.12，再导入包内 .unitypackage。3D 示例使用 URP 工程；Active Input Handling 选择 Input Manager 或 Both。</li><li>打开 Assets/Demo_UrpOutlinePack/Scenes/demo_scene_outline.unity，点击 Play；不需要运行制作工具。</li><li>左键选物体；WASD 移动视角，右键拖动转头，Q/E 升降，滚轮推进，R 复位。</li><li>F1/F2/F3 或按钮切换反向外壳、Sobel 全屏、选中描边；滑块调整粗细、强度。X-Ray 用于选中描边方案。</li></ul></div><div class=\"guide-section guide-section--extra\"><p>Unity 2022.3 · 反向外壳、Sobel、选中描边 · 可编辑 Prefab</p><h3>功能与实现</h3><ul><li>Scripts/Core/OutlineMethodSwitcher.cs → Scripts/Methods 中的 Controller / RendererFeature / Pass → Shaders。</li><li>反向外壳、Sobel 全屏、选中物体 Mask 三种方案；X-Ray 只用于选中描边方案。</li></ul><h3>正式界面与资源</h3><ul><li>界面布局已保存为原生 Prefab，图片、字体、模型和材质保存在模块内部，可在 Inspector 中替换。</li><li>运行时处理数据、输入与状态更新；动态条目实例化预制资产，不依赖运行时绘制整套美术。</li><li>完整操作、接入说明和代码入口见 Assets/Demo_UrpOutlinePack/Docs/。字体许可随资源提供。</li></ul><h3>适用范围</h3><ul><li>适用于 URP；示例临时启用随包管线，退出恢复。正式接入时将 Renderer Feature 加入自己的 URP Renderer。</li><li>交付源码、示例场景和资源，不包含独立 Player 可执行文件。</li></ul><h3>效果展示</h3><figure><img src=\"Imgs/unity-urp-outline-pack-refactor-v2-1.png\" alt=\"描边与高亮：实际运行界面\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>描边与高亮：实际运行界面</figcaption></figure><figure><img src=\"Imgs/unity-urp-outline-pack-refactor-v2-2.png\" alt=\"描边与高亮：功能与状态展示\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>描边与高亮：功能与状态展示</figcaption></figure><figure><img src=\"Imgs/unity-urp-outline-pack-refactor-v2-3.png\" alt=\"描边与高亮：功能与状态展示\" loading=\"lazy\" style=\"max-width:100%;height:auto\"><figcaption>描边与高亮：功能与状态展示</figcaption></figure></div>",
-      "cover": "Imgs/unity-urp-outline-pack-cover-v2.png"
+      "cover": "Imgs/unity-urp-outline-pack-cover-v3.png"
     },
     {
       "id": "achievement-system-godot",
